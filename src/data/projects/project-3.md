@@ -32,7 +32,7 @@ details:
       value: Completed
 
     - label: Client
-      value: Envato Market
+      value: Sofcot
 
     - label: Location
       value: Paris • France
