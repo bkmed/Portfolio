@@ -44,13 +44,13 @@ async function HomeOnePage() {
 
       <HistorySection />
 
-      <Suspense fallback={<div>Loading...</div>}>
+     {/*  <Suspense fallback={<div>Loading...</div>}>
         <LatestPostsSlider posts={posts} />
-      </Suspense>
+      </Suspense> */}
       
       <ContactInfoSection />
       <ContactFormSection />
-      <PartnersSection />
+      {/* <PartnersSection /> */}
     </>
   );
 };
