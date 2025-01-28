@@ -1,5 +1,5 @@
 ---
 #preview
 name: Ben Khedher Mohamed
-avatar: /img/face-1.jpeg
+avatar: /Portfolio/img/face-1.jpeg
 ---

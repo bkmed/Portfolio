@@ -10,7 +10,7 @@
         "perPage": 6
     },
     "profile": {
-        "avatar": "/img/face-1.jpeg",
+        "avatar": "/Portfolio/img/face-1.jpeg",
         "name": "Ben Khedehr Mohamed",
         "role": "Full-Stack Deweloper <br>Ui/UX Designer",
         "info": [
@@ -86,10 +86,10 @@
                 }
             ]
         },
-        "resume": "/files/cv.pdf"
+        "resume": "/Portfolio/files/cv.pdf"
     },
     "header": {
-        "topBackground": "/img/bg.jpeg",
+        "topBackground": "/Portfolio/img/bg.jpeg",
         "menu": [
             {
                 "label": "Home",
