@@ -3,16 +3,18 @@ import dynamic from "next/dynamic";
 
 import AppData from "@data/app.json";
 
-const ProjectsMasonry = dynamic( () => import("@components/ProjectsMasonry"), { ssr: false } );
+const ProjectsMasonry = dynamic(() => import("@components/ProjectsMasonry"), {
+  ssr: false,
+});
 
 import { getSortedProjectsData } from "@library/projects";
 
 export const metadata = {
   title: {
-		default: AppData.header.menu[2].children[2].label,
-	},
+    default: "project-3",
+  },
   description: AppData.settings.siteDescription,
-}
+};
 
 async function Projects() {
   const projects = await getAllProjects();
@@ -20,11 +22,15 @@ async function Projects() {
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>
-        <ProjectsMasonry projects={projects} categories={AppData.projects.categories} columns={3} />
+        <ProjectsMasonry
+          projects={projects}
+          categories={AppData.projects.categories}
+          columns={3}
+        />
       </Suspense>
     </>
   );
-};
+}
 export default Projects;
 
 async function getAllProjects() {

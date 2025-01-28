@@ -9,7 +9,7 @@ import { getSortedProjectsData } from "@library/projects";
 
 export const metadata = {
   title: {
-		default: AppData.header.menu[2].children[3].label,
+		default: 'project-4',
 	},
   description: AppData.settings.siteDescription,
 }
