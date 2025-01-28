@@ -1,0 +1,45 @@
+{
+    "title": "My Services",
+    "items": [
+        {
+            "title": "Web Development",
+            "text": "HTML/CSS, JavaScript, React, Next.js, Typescript",
+            "button": {
+                "link": "/contact",
+                "label": "Order now"
+            }
+        },
+        {
+            "title": "UI/UX Design",
+            "text": "Figma",
+            "button": {
+                "link": "/contact",
+                "label": "Order now"
+            }
+        },
+        {
+            "title": "Backend Development",
+            "text": "Node.js, Express.js, PHP, Laravel, TypeScript",
+            "button": {
+                "link": "/contact",
+                "label": "Order now"
+            }
+        },
+        {
+            "title": "Test Integration",
+            "text": "Cypress, Jest, Detox",
+            "button": {
+                "link": "/contact",
+                "label": "Order now"
+            }
+        },
+        {
+            "title": "Mobile Development",
+            "text": "React Native, Cordova, Ionic, Ios, Android",
+            "button": {
+                "link": "/contact",
+                "label": "Order now"
+            }
+        }
+    ]
+}

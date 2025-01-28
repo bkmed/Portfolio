@@ -1,0 +1,14 @@
+{
+    "items": [
+        {
+            "label": "Years Experience",
+            "value": "7",
+            "valueAfter": "+"
+        },
+        {
+            "label": "Completed Projects",
+            "value": "16",
+            "valueAfter": "+"
+        }
+    ]
+}

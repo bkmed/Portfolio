@@ -1,0 +1,37 @@
+{
+    "title": "Contact information",
+    "items": [
+        {
+            "info": [
+                {
+                    "label": "Country",
+                    "value": "Tunisia"
+                },
+                {
+                    "label": "City",
+                    "value": "Tunis"
+                },
+                {
+                    "label": "Streat",
+                    "value": "16, Taha Houssein Carthage byrsa"
+                }
+            ]
+        },
+        {
+            "info": [
+                {
+                    "label": "Email",
+                    "value": "ben.khedhermohamed0@gmail.com"
+                },
+                {
+                    "label": "Skype",
+                    "value": "med.bka"
+                },
+                {
+                    "label": "Personal",
+                    "value": "+216 (97) 317 374"
+                }
+            ]
+        }
+    ]
+}

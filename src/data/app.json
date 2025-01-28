@@ -1,0 +1,158 @@
+{
+    "settings": {
+        "siteName": "Ben Khedehr Mohamed",
+        "siteDescription": "Personal Portfolio of Ben Khedehr Mohamed",
+        "formspreeURL": "https://formspree.io/f/mjkgwbdp",
+        "mailchimp": {
+            "url": "",
+            "key": ""
+        },
+        "perPage": 6
+    },
+    "profile": {
+        "avatar": "/img/face-1.jpeg",
+        "name": "Ben Khedehr Mohamed",
+        "role": "Full-Stack Deweloper <br>Ui/UX Designer",
+        "info": [
+            {
+                "label": "Residence",
+                "value": "Tunisia"
+            },
+            {
+                "label": "City",
+                "value": "Tunis"
+            },
+            {
+                "label": "Driving license",
+                "value": "2008-09-17"
+            }
+        ],
+        "skills": {
+            "language": [
+                {
+                    "label": "French",
+                    "value": "1"
+                },
+                {
+                    "label": "English",
+                    "value": "0.7"
+                },
+                {
+                    "label": "Arabic",
+                    "value": "1"
+                }
+            ],
+            "hard": [
+                {
+                    "label": "Cordova / React / React native Redux",
+                    "value": "1"
+                },
+                {
+                    "label": "UI/UX Design Principles",
+                    "value": "0.95"
+                },
+                {
+                    "label": "Cypress / Jest / Detox",
+                    "value": "0.75"
+                },
+                {
+                    "label": "Swift / kotlin / java",
+                    "value": "0.65"
+                },
+                {
+                    "label": "Node js / Javascript",
+                    "value": "0.85"
+                },
+                {
+                    "label": "CI/CD (Bitrise / Bitbucket Pipelines)",
+                    "value": "0.9"
+                }
+            ],
+            "knowledge": [
+                {
+                    "label": "Bootstrap, Materialize"
+                },
+                {
+                    "label": "Stylus, Sass, Less"
+                },
+                {
+                    "label": "Gulp, Webpack, Grunt"
+                },
+                {
+                    "label": "GIT knowledge"
+                },
+                {
+                    "label": "Agil (Scrum/kanban)"
+                }
+            ]
+        },
+        "resume": "/files/cv.pdf"
+    },
+    "header": {
+        "topBackground": "/img/bg.jpeg",
+        "menu": [
+            {
+                "label": "Home",
+                "link": "/",
+                "children": 0
+            },
+            {
+                "label": "History",
+                "link": "/history",
+                "children": 0
+            },
+            {
+                "label": "Projects",
+                "link": "/projects",
+                "children": [
+                    {
+                        "label": "AppKiosk",
+                        "link": "/projects"
+                    },
+                    {
+                        "label": "Welcol Projects",
+                        "link": "/projects-2"
+                    }
+                ]
+            },
+            {
+                "label": "Contact",
+                "link": "/contact",
+                "children": 0
+            }     
+        ]
+    },
+    "footer": {
+        "copy": "© 2025 Bk. All rights reserved.",
+        "developer": "Developed by:&#160; <a href='https://github.com/bkmed' target='_blank'>Ben Khedher Mohamed</a>"
+    },
+    "social": [
+        {
+            "link": "https://www.linkedin.com/in/ben-khedher-mohamed-78aa1510a/",
+            "icon": "fab fa-linkedin-in",
+            "title": "Linkedin"
+        },
+        {
+            "link": "https://github.com/bkmed",
+            "icon": "fab fa-github",
+            "title": "Github"
+        },
+        {
+            "link": "https://x.com/MoBenKhedher",
+            "icon": "fab fa-twitter",
+            "title": "X"
+        }
+    ],
+    "projects": {
+        "categories": [
+            {
+                "name": "WebSite",
+                "slug": "web-site"
+            },
+            {
+                "name": "Mobile Application",
+                "slug": "mobile-application"
+            }
+        ]
+    }
+}
