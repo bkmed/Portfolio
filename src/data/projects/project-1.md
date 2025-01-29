@@ -2,7 +2,7 @@
 #preview
 title: Maison&Objet
 image: https://play-lh.googleusercontent.com/Wgw8wdfHirufqiXG7H-Rb_4hL1jiu7GOZGuplXB_DTDxLwSDYoQSn9-ywrldq7OQJzg=w240-h480-rw
-category: mobile-application
+category: Mobile Application
 category_slug: mobile-application
 #portfolio image size for masonry layout: horizontal, vertical, square
 masonrySize: horizontal

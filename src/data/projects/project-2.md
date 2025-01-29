@@ -2,10 +2,10 @@
 #preview
 title: Welcol
 image: https://www.welcol.io/welcol-icon-hr.png
-category: web-site
+category: WebSite
 category_slug: web-site
 #portfolio image size for masonry layout: horizontal, vertical, square
-masonrySize: vertical
+masonrySize: horizontal
 
 #full details
 description:

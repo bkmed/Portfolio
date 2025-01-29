@@ -1,8 +1,8 @@
 ---
 #preview
 title: PARIS DESIGN WEEK
-image: https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/44/d9/f5/44d9f5b2-ec0d-75fa-08fb-53fcf3df05ad/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/230x0w.webp
-category: mobile-application
+image: http://mo-production-public.s3.eu-west-3.amazonaws.com/s3fs-public/2023-11/PDW24_670x485_px.png
+category: Mobile Application
 category_slug: mobile-application
 #portfolio image size for masonry layout: horizontal, vertical, square
 masonrySize: horizontal
