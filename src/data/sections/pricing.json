@@ -4,7 +4,7 @@
         {
             "title": "Starter Price",
             "price": {
-                "before": "$",
+                "before": "TND",
                 "value": "10",
                 "after": "h"
             },
@@ -40,7 +40,7 @@
         {
             "title": "Hourly payment",
             "price": {
-                "before": "$",
+                "before": "TND",
                 "value": "17",
                 "after": "h"
             },
@@ -76,7 +76,7 @@
         {
             "title": "Full time",
             "price": {
-                "before": "$",
+                "before": "TND",
                 "value": "2500",
                 "after": "M"
             },
