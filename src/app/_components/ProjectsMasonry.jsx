@@ -1,9 +1,10 @@
 "use client";
 
-import Isotope from "isotope-layout";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import ImageView from "@components/ImageView";
+
+import { useTranslation } from "../_context/TranslationContext";
 
 const ProjectsMasonry = ({
   projects,
@@ -11,21 +12,22 @@ const ProjectsMasonry = ({
   layout = "masonry",
   columns = 2,
 }) => {
+  const { t } = useTranslation();
   // Isotope
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");
 
   useEffect(() => {
-    //setTimeout(() => {
-    isotope.current = new Isotope(".art-grid", {
-      itemSelector: ".art-grid-item",
-      percentPosition: true,
-      masonry: {
-        columnWidth: ".art-grid-item",
-      },
-      transitionDuration: ".6s",
+    import("isotope-layout").then((Isotope) => {
+      isotope.current = new Isotope.default(".art-grid", {
+        itemSelector: ".art-grid-item",
+        percentPosition: true,
+        masonry: {
+          columnWidth: ".art-grid-item",
+        },
+        transitionDuration: ".6s",
+      });
     });
-    //}, 500);
   }, []);
 
   useEffect(() => {
@@ -63,7 +65,7 @@ const ProjectsMasonry = ({
               {/* title frame */}
               <div className="art-title-frame">
                 {/* title */}
-                <h4>Works</h4>
+                <h4>{t('history.workHistory')}</h4>
               </div>
               {/* title frame end */}
               {/* right frame */}
@@ -77,7 +79,7 @@ const ProjectsMasonry = ({
                     onClick={(e) => handleFilterKeyChange("*", e)}
                     className="art-link art-current"
                   >
-                    All Categories
+                    {t('projects.allCategories')}
                   </a>
                   {/* filter link */}
                   {categories.map((item, key) => (
@@ -114,14 +116,12 @@ const ProjectsMasonry = ({
                   href={item.image}
                   className={
                     layout == "masonry"
-                      ? `art-a art-portfolio-item-frame art-${
-                          columns == 3 && item.masonrySize == "horizontal"
-                            ? "square"
-                            : item.masonrySize
-                        }`
-                      : `art-a art-portfolio-item-frame art-${
-                          columns == 3 ? "square" : "horizontal"
-                        }`
+                      ? `art-a art-portfolio-item-frame art-${columns == 3 && item.masonrySize == "horizontal"
+                        ? "square"
+                        : item.masonrySize
+                      }`
+                      : `art-a art-portfolio-item-frame art-${columns == 3 ? "square" : "horizontal"
+                      }`
                   }
                 >
                   {/* img */}

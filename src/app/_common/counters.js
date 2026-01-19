@@ -1,4 +1,6 @@
-import anime from 'animejs/lib/anime.es.js';
+"use client";
+
+import { animate } from 'animejs';
 
 const numberAnimate = (render, from, to, duration, timeFx) => {
     let startTime = performance.now();
@@ -16,7 +18,7 @@ export const CountersBarAnim = () => {
     const counters = document.querySelectorAll('.art-counter');
 
     // counters
-    anime({
+    animate({
         targets: '.art-counter',
         delay: 500,
         opacity: [1, 1],

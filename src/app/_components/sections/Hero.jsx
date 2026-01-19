@@ -5,8 +5,10 @@ import Link from "next/link";
 
 
 import { ReactTyped } from "react-typed";
+import { useTranslation } from "../../_context/TranslationContext";
 
 const HeroOne = () => {
+    const { t } = useTranslation();
 
     return (
         <>
@@ -18,46 +20,46 @@ const HeroOne = () => {
                     {/* col */}
                     <div className="col-lg-12">
 
-                    {/* banner */}
-                    <div className="art-a art-banner" style={{"backgroundImage": "url("+Data.bg_image+")"}}>
-                        {/* banner back */}
-                        <div className="art-banner-back"></div>
-                        {/* banner dec */}
-                        <div className="art-banner-dec"></div>
-                        {/* banner overlay */}
-                        <div className="art-banner-overlay">
-                        {/* main title */}
-                        <div className="art-banner-title">
-                            {/* title */}
-                            <h1 className="mb-15" dangerouslySetInnerHTML={{__html : Data.title}} />
-                            {/* suptitle */}
-                            <div className="art-lg-text art-code mb-25">
-                                <span dangerouslySetInnerHTML={{__html : Data.subtitle.start}} />
-                                <span 
-                                    className="txt-rotate"
-                                    data-period="2000"
-                                    data-rotate={Data.subtitle.rotates} 
-                                />
-                                 <ReactTyped
-                                    strings={Data.subtitle.rotates}
-                                    typeSpeed={100}
-                                    backSpeed={50}
-                                    loop
-                                />
-                                <span dangerouslySetInnerHTML={{__html : Data.subtitle.end}} />
+                        {/* banner */}
+                        <div className="art-a art-banner" style={{ "backgroundImage": "url(" + Data.bg_image + ")" }}>
+                            {/* banner back */}
+                            <div className="art-banner-back"></div>
+                            {/* banner dec */}
+                            <div className="art-banner-dec"></div>
+                            {/* banner overlay */}
+                            <div className="art-banner-overlay">
+                                {/* main title */}
+                                <div className="art-banner-title">
+                                    {/* title */}
+                                    <h1 className="mb-15" dangerouslySetInnerHTML={{ __html: t('hero.title') }} />
+                                    {/* suptitle */}
+                                    <div className="art-lg-text art-code mb-25">
+                                        <span dangerouslySetInnerHTML={{ __html: "&lt;" + t('hero.subtitleStart') }} />
+                                        <span
+                                            className="txt-rotate"
+                                            data-period="2000"
+                                            data-rotate={t('hero.rotates')}
+                                        />
+                                        <ReactTyped
+                                            strings={t('hero.rotates')}
+                                            typeSpeed={100}
+                                            backSpeed={50}
+                                            loop
+                                        />
+                                        <span dangerouslySetInnerHTML={{ __html: "&gt;" + Data.subtitle.end }} />
+                                    </div>
+                                    <div className="art-buttons-frame">
+                                        {/* button */}
+                                        <Link href={Data.button.link} className="art-btn art-btn-md"><span>{t('common.exploreNow')}</span></Link>
+                                    </div>
+                                </div>
+                                {/* main title end */}
+                                {/* photo */}
+                                <img src={Data.photo.url} className="art-banner-photo" alt={Data.photo.alt} />
                             </div>
-                            <div className="art-buttons-frame">
-                                {/* button */}
-                                <Link href={Data.button.link} className="art-btn art-btn-md"><span>{Data.button.label}</span></Link>
-                            </div>
+                            {/* banner overlay end */}
                         </div>
-                        {/* main title end */}
-                        {/* photo */}
-                        <img src={Data.photo.url} className="art-banner-photo" alt={Data.photo.alt} />
-                        </div>
-                        {/* banner overlay end */}
-                    </div>
-                    {/* banner end */}
+                        {/* banner end */}
 
                     </div>
                     {/* col end */}

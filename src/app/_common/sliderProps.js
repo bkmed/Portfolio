@@ -1,4 +1,4 @@
-import SwiperCore, {
+import {
   A11y,
   Autoplay,
   EffectCreative,
@@ -15,26 +15,9 @@ import SwiperCore, {
   Virtual,
   Parallax,
   FreeMode,
-} from "swiper";
+} from "swiper/modules";
 
-SwiperCore.use([
-  Mousewheel,
-  Pagination,
-  Navigation,
-  EffectFade,
-  Autoplay,
-  Grid,
-  EffectCreative,
-  Virtual,
-  HashNavigation,
-  History,
-  Thumbs,
-  Scrollbar,
-  Keyboard,
-  A11y,
-  Parallax,
-  FreeMode,
-]);
+// Swiper 11+ doesn't use SwiperCore.use, modules are passed directly to the component or props
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -83,6 +66,7 @@ export const SliderProps = {
       nextEl: '.art-testi-swiper-next',
       prevEl: '.art-testi-swiper-prev',
     },
+    modules: [Pagination, Navigation, Autoplay, EffectFade, Grid, EffectCreative, Virtual, HashNavigation, History, Thumbs, Scrollbar, Keyboard, A11y, Parallax, FreeMode, Mousewheel],
     breakpoints: {
       1500: {
         slidesPerView: 3,
@@ -113,6 +97,7 @@ export const SliderProps = {
       nextEl: '.art-blog-swiper-next',
       prevEl: '.art-blog-swiper-prev',
     },
+    modules: [Pagination, Navigation, Autoplay, EffectFade, Grid, EffectCreative, Virtual, HashNavigation, History, Thumbs, Scrollbar, Keyboard, A11y, Parallax, FreeMode, Mousewheel],
     breakpoints: {
       1200: {
         slidesPerView: 3,

@@ -34,25 +34,32 @@ import AppData from "@data/app.json";
 
 export const metadata = {
   title: {
-		default: AppData.settings.siteName,
-		template: "%s | " + AppData.settings.siteName,
-	},
+    default: AppData.settings.siteName,
+    template: "%s | " + AppData.settings.siteName,
+  },
   description: AppData.settings.siteDescription,
 }
+
+import { TranslationProvider } from "./_context/TranslationContext";
+import { ThemeProvider } from "./_context/ThemeContext";
 
 const Layouts = ({
   children
 }) => {
   return (
-    <html lang="en" className={`${primary_font.variable} ${secondary_font.variable}`}>
-      <body className="default--scrolling">
-        {/* app */}
-        <div className="art-app">
-          {children}
-        </div>
-        {/* app end */}
-      </body>
-    </html>
+    <TranslationProvider>
+      <ThemeProvider>
+        <html lang="en" className={`${primary_font.variable} ${secondary_font.variable}`}>
+          <body className="default--scrolling">
+            {/* app */}
+            <div className="art-app">
+              {children}
+            </div>
+            {/* app end */}
+          </body>
+        </html>
+      </ThemeProvider>
+    </TranslationProvider>
   );
 };
 export default Layouts;

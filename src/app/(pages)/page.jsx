@@ -9,13 +9,13 @@ import ServicesSection from "@components/sections/Services";
 import PricingSection from "@components/sections/Pricing";
 import PartnersSection from "@components/sections/Partners";
 
-const TestimonialSlider = dynamic( () => import("@components/sliders/Testimonial"), { ssr: false } );
+import { TestimonialSlider } from "@components/DynamicComponents";
 
 export const metadata = {
   title: {
-		default: "Home",
-		template: "%s | " + AppData.settings.siteName,
-	},
+    default: "Home",
+    template: "%s | " + AppData.settings.siteName,
+  },
   description: AppData.settings.siteDescription,
 }
 
@@ -27,7 +27,7 @@ async function Home1() {
       <ServicesSection />
       <PricingSection />
       <TestimonialSlider />
-     {/*  <PartnersSection /> */}
+      {/*  <PartnersSection /> */}
     </>
   );
 };

@@ -3,8 +3,10 @@
 import Data from "@data/sections/counters.json";
 import { useEffect } from "react";
 import { CountersBarAnim } from "@common/counters";
+import { useTranslation } from "../../_context/TranslationContext";
 
 const CountersSection = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     CountersBarAnim();
   }, []);
@@ -26,23 +28,31 @@ const CountersSection = () => {
     return years;
   };
 
+  const counterItems = [
+    {
+      label: t('counters.experience'),
+      value: calculateYearsExperience(Data.items[0].startDate),
+      valueAfter: Data.items[0].valueAfter
+    },
+    {
+      label: t('counters.completed'),
+      value: Data.items[1].value,
+      valueAfter: Data.items[1].valueAfter
+    }
+  ];
+
   return (
     <>
       {/* counters */}
       <div className="container-fluid">
         <div className="row p-30-0">
-          {Data.items.map((item, key) => {
-            const value =
-              item.label === "Years Experience"
-                ? calculateYearsExperience(item.startDate)
-                : item.value;
-
+          {counterItems.map((item, key) => {
             return (
               <div className="col-md-3 col-6" key={`counters-item-${key}`}>
                 {/* counter frame */}
                 <div className="art-counter-frame">
                   <div className="art-counter-box">
-                    <span className="art-counter" data-count={value}>
+                    <span className="art-counter" data-count={item.value}>
                       0
                     </span>
                     <span className="art-counter-plus">{item.valueAfter}</span>

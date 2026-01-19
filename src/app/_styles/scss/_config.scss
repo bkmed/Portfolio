@@ -1,16 +1,43 @@
 
 $main-color: #FFC107;
 
-/*
-$main-color: #FFC107
-$main-color: #f44336;
-$main-color: #4CAF50;
-$main-color: #64B5F6;
-*/
+:root {
+    --primary-color: #FFC107;
+    --bg-color: rgba(30, 30, 40, 1);
+    --bg-color-light: rgba(30, 30, 40, 0.98);
+    --bg-color-s-light: rgba(30,30,40,.88);
+    --content-color: rgba(30,30,40,1);
+    --info-bar-1: rgba(32,32,42,1);
+    --info-bar-2: linear-gradient(159deg, rgba(37,37,50,1) 0%, rgba(35,35,45,1) 100%);
+    --card-color: linear-gradient(159deg, rgba(45,45,58,1) 0%, rgba(43,43,53,1) 100%);
+    --text-color-1: rgba(250,250,252,1);
+    --text-color-2: rgba(140,140,142,1);
+    --text-color-3: rgba(100,100,102,1);
+    --deep-color: rgba(25,25,35,1);
+    --shadow-1: 0 3px 8px 0 rgba(15,15,20,.2);
+    --shadow-2: 0 1px 4px 0 rgba(15,15,20,.1);
+    --top-bg: linear-gradient(180deg, rgba(30,30,40,.93) 0%, rgba(30,30,40,.96) 70%, rgba(30,30,40,.99) 80%, rgba(30,30,40,1) 100%);
+}
 
+[data-theme="light"] {
+    --bg-color: #f0f0f5;
+    --bg-color-light: rgba(240, 240, 245, 0.98);
+    --bg-color-s-light: rgba(240, 240, 245, 0.88);
+    --content-color: #ffffff;
+    --info-bar-1: #ffffff;
+    --info-bar-2: linear-gradient(159deg, #f8f8fa 0%, #f0f0f5 100%);
+    --card-color: linear-gradient(159deg, #ffffff 0%, #f9f9fb 100%);
+    --text-color-1: #2d2d3a;
+    --text-color-2: #6e6e73;
+    --text-color-3: #8e8e93;
+    --deep-color: #e5e5ea;
+    --shadow-1: 0 3px 12px rgba(0,0,0,0.08);
+    --shadow-2: 0 1px 4px rgba(0,0,0,0.04);
+    --top-bg: linear-gradient(180deg, rgba(240, 240, 245, 0.9) 0%, rgba(240, 240, 245, 0.95) 100%);
+}
 
-$shadow-1: 0 3px 8px 0 rgba(15,15,20,.2);
-$shadow-2: 0 1px 4px 0 rgba(15,15,20,.1);
+$shadow-1: var(--shadow-1);
+$shadow-2: var(--shadow-2);
 
 $tr-lg: 0.55s ease-in-out;
 $tr-md: 0.4s ease-in-out;
@@ -18,28 +45,28 @@ $tr-sm: 0.2s ease-in-out;
 
 $text-neon: 0 0 3px rgba(250,250,252,.4);
 
-$card-color: linear-gradient(159deg, rgba(45,45,58,1) 0%, rgba(43,43,53,1) 100%);
-$card-color-light: linear-gradient(159deg, rgba(45,45,58,.98) 0%, rgba(43,43,53,.98) 100%);
-$card-color-s-light: linear-gradient(159deg, rgba(45,45,58,.88) 0%, rgba(43,43,53,.88) 100%);
+$card-color: var(--card-color);
+$card-color-light: var(--card-color);
+$card-color-s-light: var(--card-color);
 
-$info-bar-1-color: rgba(32,32,42,1);
-$info-bar-1-color-light: rgba(32,32,42,.98);
-$info-bar-1-color-s-light: rgba(32,32,42,.88);
+$info-bar-1-color: var(--info-bar-1);
+$info-bar-1-color-light: var(--info-bar-1);
+$info-bar-1-color-s-light: var(--info-bar-1);
 
-$info-bar-2-color: linear-gradient(159deg, rgba(37,37,50,1) 0%, rgba(35,35,45,1) 100%);
-$info-bar-2-color-light: linear-gradient(159deg, rgba(37,37,50,.98) 0%, rgba(35,35,45,.98) 100%);
-$info-bar-2-color-s-light: linear-gradient(159deg, rgba(37,37,50,.88) 0%, rgba(35,35,45,.88) 100%);
+$info-bar-2-color: var(--info-bar-2);
+$info-bar-2-color-light: var(--info-bar-2);
+$info-bar-2-color-s-light: var(--info-bar-2);
 
-$content-color: rgba(30,30,40,1);
-$content-color-light: rgba(30,30,40,.98);
-$content-color-s-light: rgba(30,30,40,.88);
+$content-color: var(--content-color);
+$content-color-light: var(--content-color);
+$content-color-s-light: var(--content-color);
 
-$deep-color: rgba(25,25,35,1);
-$deep-color-light: rgba(25,25,35,.98);
-$deep-color-s-light: rgba(25,25,35,.88);
+$deep-color: var(--deep-color);
+$deep-color-light: var(--deep-color);
+$deep-color-s-light: var(--deep-color);
 
-$text-color-1: rgba(250,250,252,1);
-$text-color-2: rgba(140,140,142,1);
-$text-color-3: rgba(100,100,102,1);
+$text-color-1: var(--text-color-1);
+$text-color-2: var(--text-color-2);
+$text-color-3: var(--text-color-3);
 
-$top-bg-gradient: linear-gradient(180deg, rgba(30,30,40,.93) 0%, rgba(30,30,40,.96) 70%, rgba(30,30,40,.99) 80%, rgba(30,30,40,1) 100%)
+$top-bg-gradient: var(--top-bg);

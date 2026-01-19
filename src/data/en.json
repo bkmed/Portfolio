@@ -1,0 +1,322 @@
+{
+    "settings": {
+        "siteName": "Ben Khedherr Mohamed",
+        "siteDescription": "Personal Portfolio of Ben Khedherr Mohamed"
+    },
+    "profile": {
+        "role": "Full-stack developer <br>UI/UX designer",
+        "info": [
+            {
+                "label": "Residence",
+                "value": "Tunisia"
+            },
+            {
+                "label": "City",
+                "value": "Tunis"
+            },
+            {
+                "label": "Driving License",
+                "value": "B"
+            }
+        ],
+        "skills": {
+            "language": [
+                {
+                    "label": "French",
+                    "value": ".9"
+                },
+                {
+                    "label": "Arabe",
+                    "value": ".99"
+                },
+                {
+                    "label": "English",
+                    "value": ".8"
+                }
+            ],
+            "hard": [
+                {
+                    "label": "Html",
+                    "value": ".9"
+                },
+                {
+                    "label": "Css",
+                    "value": ".9"
+                },
+                {
+                    "label": "JS - TS",
+                    "value": ".8"
+                },
+                {
+                    "label": "PHP",
+                    "value": ".75"
+                },
+                {
+                    "label": "React.js",
+                    "value": ".8"
+                },
+                {
+                    "label": "Next.js",
+                    "value": ".75"
+                },
+                {
+                    "label": "React Native",
+                    "value": ".85"
+                },
+                {
+                    "label": "Laravel",
+                    "value": ".6"
+                }
+            ],
+            "knowledge": [
+                "Software design patterns",
+                "Clean code and DRY principles",
+                "Unit and E2E testing",
+                "Agile methodologies",
+                "Mobile UI/UX design patterns"
+            ],
+            "labels": {
+                "language": "Language Skills",
+                "hard": "Hard Skills",
+                "knowledge": "Knowledge"
+            }
+        }
+    },
+    "menu": {
+        "home": "Home",
+        "history": "History",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "history": {
+        "education": "Education",
+        "workHistory": "Work History",
+        "col1": [
+            {
+                "title": "University of Esprit",
+                "subtitle": "Student",
+                "date": "Sep 2015- Oct 2017",
+                "text": "Computer engineering diploma (Master’ s Deg ree), Tunisia tunis",
+                "label": "WebSite"
+            },
+            {
+                "title": "University of ISEP-BG",
+                "subtitle": "Student",
+                "date": "Sep 2009 - Jul 2011",
+                "text": "Higher Institute of Preparatory Studies in Biology and Geology, Tunisia tunis",
+                "label": "WebSite"
+            },
+            {
+                "title": "Bachelor’s Degre",
+                "subtitle": "Student",
+                "date": "Sep 2008 - Jul 2009",
+                "text": "Bachelor's Degree in Biology Carthage Byrsa Institute, Tunisia Tunis",
+                "label": "FaceBook"
+            }
+        ],
+        "col2": [
+            {
+                "title": "Leni Tunisia",
+                "subtitle": "Full Stack Developer",
+                "date": "Jul 2020 - Present",
+                "text": "Development of mobile and web applications for smartphones and tablets intended for visitors to places or events.",
+                "label": "WebSite"
+            },
+            {
+                "title": "Incol",
+                "subtitle": "TECH LEAD MOBILE",
+                "date": "Oct 2017 - Jun 2020",
+                "text": "Development of the prototype and then the MVP of the Welcol mobile application, a platform for networking and remote consultation via video call in the field of well-being.",
+                "label": "WebSite"
+            },
+            {
+                "title": "Forsyslab",
+                "subtitle": "Full Stack Engineer",
+                "date": "Jan 2017 - Jul 2017",
+                "text": "Development of the prototype, then of the MVP of the Talquest platform, a professional social network which aims to help people find job opportunities, by introducing concepts and algorithms to match talents with job offers.",
+                "label": "WebSite"
+            }
+        ]
+    },
+    "projects": {
+        "allCategories": "All Categories"
+    },
+    "common": {
+        "readMore": "Read More",
+        "orderDate": "Order Date",
+        "finalDate": "Final Date",
+        "status": "Status",
+        "client": "Client",
+        "location": "Location",
+        "developedBy": "Developed by:",
+        "exploreNow": "Explore now",
+        "cv": "Download CV"
+    },
+    "hero": {
+        "title": "Discover my Amazing <br/>Work Space!",
+        "subtitleStart": "<i>code</i> I build ",
+        "rotates": [
+            "web interfaces.",
+            "ios and android applications.",
+            "design mocups.",
+            "automation tools."
+        ]
+    },
+    "services": {
+        "title": "My Services",
+        "items": [
+            {
+                "title": "Web Development",
+                "text": "HTML/CSS, JavaScript, React, Next.js, Typescript",
+                "label": "Order now"
+            },
+            {
+                "title": "UI/UX Design",
+                "text": "Figma",
+                "label": "Order now"
+            },
+            {
+                "title": "Backend Development",
+                "text": "Node.js, Express.js, PHP, Laravel, TypeScript",
+                "label": "Order now"
+            },
+            {
+                "title": "Test Integration",
+                "text": "Cypress, Jest, Detox",
+                "label": "Order now"
+            },
+            {
+                "title": "Mobile Development",
+                "text": "React Native, Cordova, Ionic, Ios, Android",
+                "label": "Order now"
+            }
+        ]
+    },
+    "counters": {
+        "experience": "Years Experience",
+        "completed": "Completed Projects"
+    },
+    "pricing": {
+        "title": "Price Plans",
+        "items": [
+            {
+                "title": "Starter Price",
+                "info": "<sup>*</sup>Free only when ordering paid services",
+                "label": "Order now",
+                "list": [
+                    {
+                        "value": "UI Design",
+                        "active": 1
+                    },
+                    {
+                        "value": "Web Development",
+                        "active": 1
+                    },
+                    {
+                        "value": "Backend Development",
+                        "active": 0
+                    },
+                    {
+                        "value": "SEO optimization",
+                        "active": 0
+                    },
+                    {
+                        "value": "Test Integration",
+                        "active": 0
+                    }
+                ]
+            },
+            {
+                "title": "Hourly payment",
+                "info": "",
+                "label": "Order now",
+                "list": [
+                    {
+                        "value": "UI Design",
+                        "active": 1
+                    },
+                    {
+                        "value": "Web Development",
+                        "active": 1
+                    },
+                    {
+                        "value": "Backend Development",
+                        "active": 1
+                    },
+                    {
+                        "value": "SEO optimization",
+                        "active": 0
+                    },
+                    {
+                        "value": "Test Integration",
+                        "active": 0
+                    }
+                ]
+            },
+            {
+                "title": "Full time",
+                "info": "",
+                "label": "Order now",
+                "list": [
+                    {
+                        "value": "UI Design",
+                        "active": 1
+                    },
+                    {
+                        "value": "Web Development",
+                        "active": 1
+                    },
+                    {
+                        "value": "Backend Development",
+                        "active": 1
+                    },
+                    {
+                        "value": "SEO optimization",
+                        "active": 1
+                    },
+                    {
+                        "value": "Test Integration",
+                        "active": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "contactInfo": {
+        "title": "Contact information",
+        "items": [
+            {
+                "info": [
+                    {
+                        "label": "Country",
+                        "value": "Tunisia"
+                    },
+                    {
+                        "label": "City",
+                        "value": "Tunis"
+                    },
+                    {
+                        "label": "Streat",
+                        "value": "16, Taha Houssein Carthage byrsa"
+                    }
+                ]
+            },
+            {
+                "info": [
+                    {
+                        "label": "Email",
+                        "value": "ben.khedhermohamed0@gmail.com"
+                    },
+                    {
+                        "label": "Skype",
+                        "value": "med.bka"
+                    },
+                    {
+                        "label": "Personal",
+                        "value": "+216 (97) 317 374"
+                    }
+                ]
+            }
+        ]
+    }
+}

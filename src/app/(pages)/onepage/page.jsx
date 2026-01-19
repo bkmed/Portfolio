@@ -15,14 +15,12 @@ import HistorySection from "@components/sections/History";
 import ContactInfoSection from "@components/sections/ContactInfo";
 import ContactFormSection from "@components/sections/Contact";
 
-const TestimonialSlider = dynamic( () => import("@components/sliders/Testimonial"), { ssr: false } );
-const LatestPostsSlider = dynamic( () => import("@components/sliders/LatestPosts"), { ssr: false } );
-const ProjectsMasonry = dynamic( () => import("@components/ProjectsMasonry"), { ssr: false } );
+import { TestimonialSlider, LatestPostsSlider, ProjectsMasonry } from "@components/DynamicComponents";
 
 export const metadata = {
   title: {
-		default: "Home 3",
-	},
+    default: "Home 3",
+  },
   description: AppData.settings.siteDescription,
 }
 
@@ -44,10 +42,10 @@ async function HomeOnePage() {
 
       <HistorySection />
 
-     {/*  <Suspense fallback={<div>Loading...</div>}>
+      {/*  <Suspense fallback={<div>Loading...</div>}>
         <LatestPostsSlider posts={posts} />
       </Suspense> */}
-      
+
       <ContactInfoSection />
       <ContactFormSection />
       {/* <PartnersSection /> */}

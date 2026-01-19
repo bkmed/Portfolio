@@ -1,62 +1,68 @@
+"use client";
+
 import Data from "@data/sections/services.json";
 import Link from "next/link";
+import { useTranslation } from "../../_context/TranslationContext";
 
 const ServicesSection = () => {
-  return (
-    <>
-        {/* services */}
-        <div className="container-fluid">
+    const { t } = useTranslation();
+    const services = t('services.items') || [];
 
-        {/* row */}
-        <div className="row">
+    return (
+        <>
+            {/* services */}
+            <div className="container-fluid">
 
-            {/* col */}
-            <div className="col-lg-12">
+                {/* row */}
+                <div className="row">
 
-            {/* section title */}
-            <div className="art-section-title">
-                {/* title frame */}
-                <div className="art-title-frame">
-                {/* title */}
-                <h4 dangerouslySetInnerHTML={{__html : Data.title}} />
-                </div>
-                {/* title frame end */}
-            </div>
-            {/* section title end */}
+                    {/* col */}
+                    <div className="col-lg-12">
 
-            </div>
-            {/* col end */}
-            
-            {Data.items.map((item, key) => (
-            <div className="col-lg-4 col-md-6" key={`services-item-${key}`}>
+                        {/* section title */}
+                        <div className="art-section-title">
+                            {/* title frame */}
+                            <div className="art-title-frame">
+                                {/* title */}
+                                <h4 dangerouslySetInnerHTML={{ __html: t('services.title') }} />
+                            </div>
+                            {/* title frame end */}
+                        </div>
+                        {/* section title end */}
 
-            {/* service */}
-            <div className="art-a art-service-icon-box">
-                {/* service content */}
-                <div className="art-service-ib-content">
-                    {/* title */}
-                    <h5 className="mb-15">{item.title}</h5>
-                    {/* text */}
-                    {item.text && <div className="mb-15">{item.text}</div>}
-                    {/* button */}
-                    <div className="art-buttons-frame">
-                        <Link href={item.button.link} className="art-link art-color-link art-w-chevron">{item.button.label}</Link>
                     </div>
+                    {/* col end */}
+
+                    {services.map((item, key) => (
+                        <div className="col-lg-4 col-md-6" key={`services-item-${key}`}>
+
+                            {/* service */}
+                            <div className="art-a art-service-icon-box">
+                                {/* service content */}
+                                <div className="art-service-ib-content">
+                                    {/* title */}
+                                    <h5 className="mb-15">{item.title}</h5>
+                                    {/* text */}
+                                    {item.text && <div className="mb-15">{item.text}</div>}
+                                    {/* button */}
+                                    <div className="art-buttons-frame">
+                                        <Link href={Data.items[key].button.link} className="art-link art-color-link art-w-chevron">{item.label}</Link>
+                                    </div>
+                                </div>
+                                {/* service content end */}
+                            </div>
+                            {/* service end */}
+
+                        </div>
+                    ))}
+
                 </div>
-                {/* service content end */}
-            </div>
-            {/* service end */}
+                {/* row end */}
 
             </div>
-            ))}
-
-        </div>
-        {/* row end */}
-
-        </div>
-        {/* services end */}
-    </>
-  );
+            {/* services end */}
+        </>
+    );
 };
 
 export default ServicesSection;

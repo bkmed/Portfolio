@@ -1,12 +1,19 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { SliderProps } from "@common/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import Data from "@data/sliders/testimonial";
 
 const TestimonialSlider = () => {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const stars = [1, 2, 3, 4, 5];
+
+  if (!mounted) return null;
 
   return (
     <>
@@ -58,7 +65,7 @@ const TestimonialSlider = () => {
                       <div className="art-el-suptitle mb-15">{item.role}</div>
                       {/* text */}
                       {item.text && <div className="mb-15">{item.text}</div>}
-                      {item.contact &&  <a className="art-link art-color-link art-w-chevron" href={item.contact} target="_blank">{"Linkedin"}</a>}
+                      {item.contact && <a className="art-link art-color-link art-w-chevron" href={item.contact} target="_blank">{"Linkedin"}</a>}
                     </div>
                     {/* testimonial body end */}
                     {/* testimonial footer */}

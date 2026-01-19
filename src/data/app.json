@@ -12,7 +12,7 @@
     "profile": {
         "avatar": "/Portfolio/img/face-1.jpeg",
         "name": "Ben Khedherr Mohamed",
-        "role": "Full-Stack Deweloper <br>Ui/UX Designer",
+        "role": "Full-Stack Developer <br>Ui/UX Designer",
         "info": [
             {
                 "label": "Residence",
@@ -108,10 +108,6 @@
                     {
                         "label": "AppKiosk",
                         "link": "/projects"
-                    },
-                    {
-                        "label": "Welcol Projects",
-                        "link": "/projects-2"
                     }
                 ]
             },
@@ -119,7 +115,7 @@
                 "label": "Contact",
                 "link": "/contact",
                 "children": 0
-            }     
+            }
         ]
     },
     "footer": {

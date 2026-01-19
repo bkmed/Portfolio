@@ -3,14 +3,14 @@ import dynamic from "next/dynamic";
 
 import AppData from "@data/app.json";
 
-const ProjectsMasonry = dynamic( () => import("@components/ProjectsMasonry"), { ssr: false } );
+import { ProjectsMasonry } from "@components/DynamicComponents";
 
 import { getSortedProjectsData } from "@library/projects";
 
 export const metadata = {
   title: {
-		default: 'projects-4',
-	},
+    default: 'projects-4',
+  },
   description: AppData.settings.siteDescription,
 }
 
