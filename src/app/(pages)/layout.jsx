@@ -24,8 +24,8 @@ const PagesLayouts = ({ children }) => {
           <div className="art-content">
             <TopBackground />
 
-            {/* swup container */}
-            <div className="transition-fade" id="swup">
+            {/* content frame */}
+            <div>
               {/* scroll frame */}
               {/*<Scrollbar>*/}
               <div id="scrollbar" className="art-scroll-frame">

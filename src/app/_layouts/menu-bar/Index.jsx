@@ -71,7 +71,7 @@ const MenuBarModule = () => {
             {/* scroll frame */}
             <div className="art-scroll-frame">
               {/* menu */}
-              <nav id="swupMenu">
+              <nav>
                 {/* menu list */}
                 <ul className="main-menu">
                   {AppData.header.menu.map((item, index) => (

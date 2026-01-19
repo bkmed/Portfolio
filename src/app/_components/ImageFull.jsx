@@ -16,7 +16,6 @@ const ImageFull = ({ src, title }) => {
               {/* item frame */}
               <a
                 data-fancybox="gallery"
-                data-no-swup
                 href={src}
                 className="art-portfolio-item-frame art-horizontal"
               >

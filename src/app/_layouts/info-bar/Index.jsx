@@ -50,7 +50,6 @@ const InfoBarModule = () => {
             <div className="art-avatar">
               <a
                 data-fancybox="avatar"
-                data-no-swup
                 href={AppData.profile.avatar}
                 className="art-avatar-curtain"
               >
@@ -155,7 +154,6 @@ const InfoBarModule = () => {
                 href={AppData.profile.resume}
                 className="art-link"
                 download
-                data-no-swup
                 target="_blank"
                 rel="noreferrer"
               >

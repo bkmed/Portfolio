@@ -104,7 +104,6 @@ const ProjectsMasonry = ({ projects, categories, layout = "masonry", columns = 2
                 {/* grid item frame */}
                 <a
                   data-fancybox="gallery"
-                  data-no-swup
                   href={item.image}
                   className={
                     layout == "masonry"

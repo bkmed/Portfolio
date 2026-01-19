@@ -22,8 +22,8 @@ const NotFound = () => {
           <div className="art-content">
             <TopBackground />
 
-            {/* swup container */}
-            <div className="transition-fade" id="swup">
+            {/* content frame */}
+            <div>
               {/* scroll frame */}
               <div id="scrollbar" className="art-scroll-frame">
                 {/* 404 content */}

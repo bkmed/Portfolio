@@ -58,7 +58,6 @@ const ImagesGallery = ({ items, title }) => {
                 {/* grid item frame */}
                 <a
                   data-fancybox="gallery"
-                  data-no-swup
                   href={item.image}
                   className={`art-a art-portfolio-item-frame art-${item.masonrySize}`}
                 >
