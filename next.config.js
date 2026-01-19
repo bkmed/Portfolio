@@ -6,7 +6,6 @@ const nextConfig = {
   },
   assetPrefix: "/Portfolio/",
   basePath: "/Portfolio",
-  distDir: "out",
   output: "export",
 };
 
