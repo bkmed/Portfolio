@@ -1,322 +1,342 @@
 {
-    "settings": {
-        "siteName": "Ben Khedherr Mohamed",
-        "siteDescription": "Portfolio Personnel de Ben Khedherr Mohamed"
-    },
-    "profile": {
-        "role": "Développeur Full-stack <br>Designer UI/UX",
-        "info": [
-            {
-                "label": "Résidence",
-                "value": "Tunisie"
-            },
-            {
-                "label": "Ville",
-                "value": "Tunis"
-            },
-            {
-                "label": "Permis de conduire",
-                "value": "B"
-            }
-        ],
-        "skills": {
-            "language": [
-                {
-                    "label": "Français",
-                    "value": ".9"
-                },
-                {
-                    "label": "Arabe",
-                    "value": ".99"
-                },
-                {
-                    "label": "Anglais",
-                    "value": ".8"
-                }
-            ],
-            "hard": [
-                {
-                    "label": "Html",
-                    "value": ".9"
-                },
-                {
-                    "label": "Css",
-                    "value": ".9"
-                },
-                {
-                    "label": "JS - TS",
-                    "value": ".8"
-                },
-                {
-                    "label": "PHP",
-                    "value": ".75"
-                },
-                {
-                    "label": "React.js",
-                    "value": ".8"
-                },
-                {
-                    "label": "Next.js",
-                    "value": ".75"
-                },
-                {
-                    "label": "React Native",
-                    "value": ".85"
-                },
-                {
-                    "label": "Laravel",
-                    "value": ".6"
-                }
-            ],
-            "knowledge": [
-                "Patrons de conception logicielle",
-                "Code propre et principes DRY",
-                "Tests unitaires et E2E",
-                "Méthodologies agiles",
-                "Patrons de design UI/UX mobile"
-            ],
-            "labels": {
-                "language": "Compétences Linguistiques",
-                "hard": "Compétences Techniques",
-                "knowledge": "Connaissances"
-            }
+  "settings": {
+    "siteName": "Ben Khedherr Mohamed",
+    "siteDescription": "Portfolio Personnel de Ben Khedherr Mohamed"
+  },
+  "profile": {
+    "role": "Développeur Full-stack <br>Designer UI/UX",
+    "info": [
+      {
+        "label": "Résidence",
+        "value": "Tunisie"
+      },
+      {
+        "label": "Ville",
+        "value": "Tunis"
+      },
+      {
+        "label": "Permis de conduire",
+        "value": "B"
+      }
+    ],
+    "skills": {
+      "language": [
+        {
+          "label": "Français",
+          "value": ".9"
+        },
+        {
+          "label": "Arabe",
+          "value": ".99"
+        },
+        {
+          "label": "Anglais",
+          "value": ".8"
         }
-    },
-    "menu": {
-        "home": "Accueil",
-        "history": "Historique",
-        "projects": "Projets",
-        "contact": "Contact"
-    },
-    "history": {
-        "education": "Éducation",
-        "workHistory": "Expérience Professionnelle",
-        "col1": [
-            {
-                "title": "Université Esprit",
-                "subtitle": "Étudiant",
-                "date": "Sep 2015 - Oct 2017",
-                "text": "Diplôme d'ingénieur en informatique (Master), Tunisie tunis",
-                "label": "Site Web"
-            },
-            {
-                "title": "Université ISEP-BG",
-                "subtitle": "Étudiant",
-                "date": "Sep 2009 - Juil 2011",
-                "text": "Institut Supérieur des Études Préparatoires en Biologie et Géologie, Tunisie tunis",
-                "label": "Site Web"
-            },
-            {
-                "title": "Baccalauréat",
-                "subtitle": "Étudiant",
-                "date": "Sep 2008 - Juil 2009",
-                "text": "Baccalauréat en biologie, Institut Carthage Byrsa, Tunisie Tunis",
-                "label": "FaceBook"
-            }
-        ],
-        "col2": [
-            {
-                "title": "Leni Tunisie",
-                "subtitle": "Développeur Full Stack",
-                "date": "Juil 2020 - Présent",
-                "text": "Développement d'applications mobiles et web pour smartphones et tablettes destinées aux visiteurs de lieux أو d'événements.",
-                "label": "Site Web"
-            },
-            {
-                "title": "Incol",
-                "subtitle": "TECH LEAD MOBILE",
-                "date": "Oct 2017 - Juin 2020",
-                "text": "Développement du prototype puis du MVP de l'application mobile Welcol, une plateforme de mise en réseau et de consultation à distance via appel vidéo dans le domaine du bien-être.",
-                "label": "Site Web"
-            },
-            {
-                "title": "Forsyslab",
-                "subtitle": "Ingénieur Full Stack",
-                "date": "Jan 2017 - Juil 2017",
-                "text": "Développement du prototype, puis du MVP de la plateforme Talquest, un réseau social professionnel qui vise à aider les gens à trouver des opportunités d'emploi, en introduisant des concepts et des algorithmes pour faire correspondre les talents aux offres d'emploi.",
-                "label": "Site Web"
-            }
-        ]
-    },
-    "projects": {
-        "allCategories": "Toutes les Catégories"
-    },
-    "common": {
-        "readMore": "Lire Plus",
-        "orderDate": "Date de Commande",
-        "finalDate": "Date de Fin",
-        "status": "Statut",
-        "client": "Client",
-        "location": "Lieu",
-        "developedBy": "Développé par :",
-        "exploreNow": "Explorer maintenant",
-        "cv": "Télécharger CV"
-    },
-    "hero": {
-        "title": "Découvrez mon Espace <br/>de Travail Incroyable!",
-        "subtitleStart": "<i>code</i> Je construis des ",
-        "rotates": [
-            "interfaces web.",
-            "applications ios et android.",
-            "maquettes de design.",
-            "outils d'automatisation."
-        ]
-    },
-    "services": {
-        "title": "Mes Services",
-        "items": [
-            {
-                "title": "Développement Web",
-                "text": "HTML/CSS, JavaScript, React, Next.js, Typescript",
-                "label": "Commander maintenant"
-            },
-            {
-                "title": "Design UI/UX",
-                "text": "Figma",
-                "label": "Commander maintenant"
-            },
-            {
-                "title": "Développement Backend",
-                "text": "Node.js, Express.js, PHP, Laravel, TypeScript",
-                "label": "Commander maintenant"
-            },
-            {
-                "title": "Intégration de Tests",
-                "text": "Cypress, Jest, Detox",
-                "label": "Commander maintenant"
-            },
-            {
-                "title": "Développement Mobile",
-                "text": "React Native, Cordova, Ionic, Ios, Android",
-                "label": "Commander maintenant"
-            }
-        ]
-    },
-    "counters": {
-        "experience": "Années d'expérience",
-        "completed": "Projets terminés"
-    },
-    "pricing": {
-        "title": "Plans de Tarification",
-        "items": [
-            {
-                "title": "Prix de Départ",
-                "info": "<sup>*</sup>Gratuit uniquement lors de la commande de services payants",
-                "label": "Commander maintenant",
-                "list": [
-                    {
-                        "value": "Design UI",
-                        "active": 1
-                    },
-                    {
-                        "value": "Développement Web",
-                        "active": 1
-                    },
-                    {
-                        "value": "Développement Backend",
-                        "active": 0
-                    },
-                    {
-                        "value": "Optimisation SEO",
-                        "active": 0
-                    },
-                    {
-                        "value": "Intégration de Tests",
-                        "active": 0
-                    }
-                ]
-            },
-            {
-                "title": "Paiement Horaire",
-                "info": "",
-                "label": "Commander maintenant",
-                "list": [
-                    {
-                        "value": "Design UI",
-                        "active": 1
-                    },
-                    {
-                        "value": "Développement Web",
-                        "active": 1
-                    },
-                    {
-                        "value": "Développement Backend",
-                        "active": 1
-                    },
-                    {
-                        "value": "Optimisation SEO",
-                        "active": 0
-                    },
-                    {
-                        "value": "Intégration de Tests",
-                        "active": 0
-                    }
-                ]
-            },
-            {
-                "title": "Temps Plein",
-                "info": "",
-                "label": "Commander maintenant",
-                "list": [
-                    {
-                        "value": "Design UI",
-                        "active": 1
-                    },
-                    {
-                        "value": "Développement Web",
-                        "active": 1
-                    },
-                    {
-                        "value": "Développement Backend",
-                        "active": 1
-                    },
-                    {
-                        "value": "Optimisation SEO",
-                        "active": 1
-                    },
-                    {
-                        "value": "Intégration de Tests",
-                        "active": 1
-                    }
-                ]
-            }
-        ]
-    },
-    "contactInfo": {
-        "title": "Informations de contact",
-        "items": [
-            {
-                "info": [
-                    {
-                        "label": "Pays",
-                        "value": "Tunisie"
-                    },
-                    {
-                        "label": "Ville",
-                        "value": "Tunis"
-                    },
-                    {
-                        "label": "Rue",
-                        "value": "16، طه حصين قرطاج بيرصا"
-                    }
-                ]
-            },
-            {
-                "info": [
-                    {
-                        "label": "Email",
-                        "value": "ben.khedhermohamed0@gmail.com"
-                    },
-                    {
-                        "label": "Skype",
-                        "value": "med.bka"
-                    },
-                    {
-                        "label": "Personnel",
-                        "value": "+216 (97) 317 374"
-                    }
-                ]
-            }
-        ]
+      ],
+      "hard": [
+        {
+          "label": "Html",
+          "value": ".9"
+        },
+        {
+          "label": "Css",
+          "value": ".9"
+        },
+        {
+          "label": "JS - TS",
+          "value": ".8"
+        },
+        {
+          "label": "PHP",
+          "value": ".75"
+        },
+        {
+          "label": "React.js",
+          "value": ".8"
+        },
+        {
+          "label": "Next.js",
+          "value": ".75"
+        },
+        {
+          "label": "React Native",
+          "value": ".85"
+        },
+        {
+          "label": "Laravel",
+          "value": ".6"
+        }
+      ],
+      "knowledge": [
+        "Patrons de conception logicielle",
+        "Code propre et principes DRY",
+        "Tests unitaires et E2E",
+        "Méthodologies agiles",
+        "Patrons de design UI/UX mobile"
+      ],
+      "labels": {
+        "language": "Compétences Linguistiques",
+        "hard": "Compétences Techniques",
+        "knowledge": "Connaissances"
+      }
     }
+  },
+  "menu": {
+    "home": "Accueil",
+    "history": "Historique",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "history": {
+    "education": "Éducation",
+    "workHistory": "Expérience Professionnelle",
+    "col1": [
+      {
+        "title": "Université Esprit",
+        "subtitle": "Étudiant",
+        "date": "Sep 2015 - Oct 2017",
+        "text": "Diplôme d'ingénieur en informatique (Master), Tunisie tunis",
+        "label": "Site Web"
+      },
+      {
+        "title": "Université ISEP-BG",
+        "subtitle": "Étudiant",
+        "date": "Sep 2009 - Juil 2011",
+        "text": "Institut Supérieur des Études Préparatoires en Biologie et Géologie, Tunisie tunis",
+        "label": "Site Web"
+      },
+      {
+        "title": "Baccalauréat",
+        "subtitle": "Étudiant",
+        "date": "Sep 2008 - Juil 2009",
+        "text": "Baccalauréat en biologie, Institut Carthage Byrsa, Tunisie Tunis",
+        "label": "FaceBook"
+      }
+    ],
+    "col2": [
+      {
+        "title": "Leni Tunisie",
+        "subtitle": "Développeur Full Stack",
+        "date": "Juil 2020 - Présent",
+        "text": "Développement d'applications mobiles et web pour smartphones et tablettes destinées aux visiteurs de lieux أو d'événements.",
+        "label": "Site Web"
+      },
+      {
+        "title": "Incol",
+        "subtitle": "TECH LEAD MOBILE",
+        "date": "Oct 2017 - Juin 2020",
+        "text": "Développement du prototype puis du MVP de l'application mobile Welcol, une plateforme de mise en réseau et de consultation à distance via appel vidéo dans le domaine du bien-être.",
+        "label": "Site Web"
+      },
+      {
+        "title": "Forsyslab",
+        "subtitle": "Ingénieur Full Stack",
+        "date": "Jan 2017 - Juil 2017",
+        "text": "Développement du prototype, puis du MVP de la plateforme Talquest, un réseau social professionnel qui vise à aider les gens à trouver des opportunités d'emploi, en introduisant des concepts et des algorithmes pour faire correspondre les talents aux offres d'emploi.",
+        "label": "Site Web"
+      }
+    ]
+  },
+  "projects": {
+    "allCategories": "Toutes les Catégories"
+  },
+  "common": {
+    "readMore": "Lire Plus",
+    "orderDate": "Date de Commande",
+    "finalDate": "Date de Fin",
+    "status": "Statut",
+    "client": "Client",
+    "location": "Lieu",
+    "developedBy": "Développé par :",
+    "exploreNow": "Explorer maintenant",
+    "cv": "Télécharger CV"
+  },
+  "hero": {
+    "title": "Découvrez mon Espace <br/>de Travail Incroyable!",
+    "subtitleStart": "<i>code</i> Je construis des ",
+    "rotates": [
+      "interfaces web.",
+      "applications ios et android.",
+      "maquettes de design.",
+      "outils d'automatisation."
+    ]
+  },
+  "services": {
+    "title": "Mes Services",
+    "items": [
+      {
+        "title": "Développement Web",
+        "text": "HTML/CSS, JavaScript, React, Next.js, Typescript",
+        "label": "Commander maintenant"
+      },
+      {
+        "title": "Design UI/UX",
+        "text": "Figma",
+        "label": "Commander maintenant"
+      },
+      {
+        "title": "Développement Backend",
+        "text": "Node.js, Express.js, PHP, Laravel, TypeScript",
+        "label": "Commander maintenant"
+      },
+      {
+        "title": "Intégration de Tests",
+        "text": "Cypress, Jest, Detox",
+        "label": "Commander maintenant"
+      },
+      {
+        "title": "Développement Mobile",
+        "text": "React Native, Cordova, Ionic, Ios, Android",
+        "label": "Commander maintenant"
+      }
+    ]
+  },
+  "counters": {
+    "experience": "Années d'expérience",
+    "completed": "Projets terminés"
+  },
+  "pricing": {
+    "title": "Plans de Tarification",
+    "items": [
+      {
+        "title": "Prix de Départ",
+        "info": "<sup>*</sup>Gratuit uniquement lors de la commande de services payants",
+        "label": "Commander maintenant",
+        "list": [
+          {
+            "value": "Design UI",
+            "active": 1
+          },
+          {
+            "value": "Développement Web",
+            "active": 1
+          },
+          {
+            "value": "Développement Backend",
+            "active": 0
+          },
+          {
+            "value": "Optimisation SEO",
+            "active": 0
+          },
+          {
+            "value": "Intégration de Tests",
+            "active": 0
+          }
+        ]
+      },
+      {
+        "title": "Paiement Horaire",
+        "info": "",
+        "label": "Commander maintenant",
+        "list": [
+          {
+            "value": "Design UI",
+            "active": 1
+          },
+          {
+            "value": "Développement Web",
+            "active": 1
+          },
+          {
+            "value": "Développement Backend",
+            "active": 1
+          },
+          {
+            "value": "Optimisation SEO",
+            "active": 0
+          },
+          {
+            "value": "Intégration de Tests",
+            "active": 0
+          }
+        ]
+      },
+      {
+        "title": "Temps Plein",
+        "info": "",
+        "label": "Commander maintenant",
+        "list": [
+          {
+            "value": "Design UI",
+            "active": 1
+          },
+          {
+            "value": "Développement Web",
+            "active": 1
+          },
+          {
+            "value": "Développement Backend",
+            "active": 1
+          },
+          {
+            "value": "Optimisation SEO",
+            "active": 1
+          },
+          {
+            "value": "Intégration de Tests",
+            "active": 1
+          }
+        ]
+      }
+    ]
+  },
+  "contactInfo": {
+    "title": "Informations de contact",
+    "items": [
+      {
+        "info": [
+          {
+            "label": "Pays",
+            "value": "Tunisie"
+          },
+          {
+            "label": "Ville",
+            "value": "Tunis"
+          },
+          {
+            "label": "Rue",
+            "value": "16، طه حصين قرطاج بيرصا"
+          }
+        ]
+      },
+      {
+        "info": [
+          {
+            "label": "Email",
+            "value": "ben.khedhermohamed0@gmail.com"
+          },
+          {
+            "label": "Skype",
+            "value": "med.bka"
+          },
+          {
+            "label": "Personnel",
+            "value": "+216 (97) 317 374"
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contactez-moi"
+  },
+  "contactForm": {
+    "placeholders": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message"
+    },
+    "button": "Envoyer le message",
+    "validation": {
+      "required": "Requis",
+      "invalidEmail": "Adresse email invalide"
+    },
+    "status": {
+      "success": "Merci, votre message a été envoyé avec succès.",
+      "error": "Oups ! Un problème est survenu lors de l'envoi du formulaire",
+      "sent": "Succès"
+    }
+  }
 }

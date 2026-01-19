@@ -12,7 +12,7 @@ export const metadata = {
     default: AppData.header.menu[2].children[0].label,
   },
   description: AppData.settings.siteDescription,
-}
+};
 
 async function Projects() {
   const projects = await getAllProjects();
@@ -20,11 +20,15 @@ async function Projects() {
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>
-        <ProjectsMasonry projects={projects} categories={AppData.projects.categories} layout={'grid'} />
+        <ProjectsMasonry
+          projects={projects}
+          categories={AppData.projects.categories}
+          layout={"grid"}
+        />
       </Suspense>
     </>
   );
-};
+}
 export default Projects;
 
 async function getAllProjects() {

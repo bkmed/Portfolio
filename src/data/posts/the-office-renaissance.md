@@ -1,13 +1,13 @@
 ---
 #preview
-title: 'The office renaissance'
-date: '2022-01-02'
+title: "The office renaissance"
+date: "2022-01-02"
 image: "/img/blog/7.jpg"
 categories:
-    - Social
+  - Social
 tags:
-    - Development
-    - Design
+  - Development
+  - Design
 author: Ben Khedher Mohamed
 short: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos.
 ---

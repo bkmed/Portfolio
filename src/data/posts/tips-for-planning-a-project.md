@@ -1,13 +1,13 @@
 ---
 #preview
-title: 'Tips for Planning a Project'
-date: '2022-03-02'
+title: "Tips for Planning a Project"
+date: "2022-03-02"
 image: "/img/blog/8.jpg"
 categories:
-    - Events
+  - Events
 tags:
-    - Design
-    - UI
+  - Design
+  - UI
 author: Ben Khedher Mohamed
 short: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos.
 ---

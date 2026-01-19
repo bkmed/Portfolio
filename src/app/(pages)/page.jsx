@@ -17,7 +17,7 @@ export const metadata = {
     template: "%s | " + AppData.settings.siteName,
   },
   description: AppData.settings.siteDescription,
-}
+};
 
 async function Home1() {
   return (
@@ -30,5 +30,5 @@ async function Home1() {
       {/*  <PartnersSection /> */}
     </>
   );
-};
+}
 export default Home1;

@@ -20,11 +20,7 @@ async function Projects() {
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>
-        <ProjectsMasonry
-          projects={projects}
-          categories={AppData.projects.categories}
-          columns={3}
-        />
+        <ProjectsMasonry projects={projects} categories={AppData.projects.categories} columns={3} />
       </Suspense>
     </>
   );

@@ -15,14 +15,18 @@ import HistorySection from "@components/sections/History";
 import ContactInfoSection from "@components/sections/ContactInfo";
 import ContactFormSection from "@components/sections/Contact";
 
-import { TestimonialSlider, LatestPostsSlider, ProjectsMasonry } from "@components/DynamicComponents";
+import {
+  TestimonialSlider,
+  LatestPostsSlider,
+  ProjectsMasonry,
+} from "@components/DynamicComponents";
 
 export const metadata = {
   title: {
     default: "Home 3",
   },
   description: AppData.settings.siteDescription,
-}
+};
 
 async function HomeOnePage() {
   const posts = await getAllPosts();
@@ -51,7 +55,7 @@ async function HomeOnePage() {
       {/* <PartnersSection /> */}
     </>
   );
-};
+}
 export default HomeOnePage;
 
 async function getAllPosts() {

@@ -12,7 +12,7 @@ export const metadata = {
     default: AppData.header.menu[2].children[0].label,
   },
   description: AppData.settings.siteDescription,
-}
+};
 
 async function Projects() {
   const projects = await getAllProjects();
@@ -24,7 +24,7 @@ async function Projects() {
       </Suspense>
     </>
   );
-};
+}
 export default Projects;
 
 async function getAllProjects() {

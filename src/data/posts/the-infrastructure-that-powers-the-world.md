@@ -1,15 +1,15 @@
 ---
 #preview
-title: 'The Infrastructure That Powers The World'
-date: '2022-01-02'
+title: "The Infrastructure That Powers The World"
+date: "2022-01-02"
 image: "/img/blog/6.jpg"
 categories:
-    - Social
+  - Social
 tags:
-    - Branding
-    - Construction
-    - Development
-    - UI
+  - Branding
+  - Construction
+  - Development
+  - UI
 author: Ben Khedher Mohamed
 short: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos.
 ---

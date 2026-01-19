@@ -6,12 +6,7 @@ import ImageView from "@components/ImageView";
 
 import { useTranslation } from "../_context/TranslationContext";
 
-const ProjectsMasonry = ({
-  projects,
-  categories,
-  layout = "masonry",
-  columns = 2,
-}) => {
+const ProjectsMasonry = ({ projects, categories, layout = "masonry", columns = 2 }) => {
   const { t } = useTranslation();
   // Isotope
   const isotope = useRef();
@@ -65,7 +60,7 @@ const ProjectsMasonry = ({
               {/* title frame */}
               <div className="art-title-frame">
                 {/* title */}
-                <h4>{t('history.workHistory')}</h4>
+                <h4>{t("history.workHistory")}</h4>
               </div>
               {/* title frame end */}
               {/* right frame */}
@@ -79,7 +74,7 @@ const ProjectsMasonry = ({
                     onClick={(e) => handleFilterKeyChange("*", e)}
                     className="art-link art-current"
                   >
-                    {t('projects.allCategories')}
+                    {t("projects.allCategories")}
                   </a>
                   {/* filter link */}
                   {categories.map((item, key) => (
@@ -105,10 +100,7 @@ const ProjectsMasonry = ({
           <div className={`art-grid art-grid-${columns}-col art-gallery`}>
             {/* grid item */}
             {projects.map((item, key) => (
-              <div
-                className={`art-grid-item ${item.category_slug}`}
-                key={`projects-item-${key}`}
-              >
+              <div className={`art-grid-item ${item.category_slug}`} key={`projects-item-${key}`}>
                 {/* grid item frame */}
                 <a
                   data-fancybox="gallery"
@@ -116,12 +108,14 @@ const ProjectsMasonry = ({
                   href={item.image}
                   className={
                     layout == "masonry"
-                      ? `art-a art-portfolio-item-frame art-${columns == 3 && item.masonrySize == "horizontal"
-                        ? "square"
-                        : item.masonrySize
-                      }`
-                      : `art-a art-portfolio-item-frame art-${columns == 3 ? "square" : "horizontal"
-                      }`
+                      ? `art-a art-portfolio-item-frame art-${
+                          columns == 3 && item.masonrySize == "horizontal"
+                            ? "square"
+                            : item.masonrySize
+                        }`
+                      : `art-a art-portfolio-item-frame art-${
+                          columns == 3 ? "square" : "horizontal"
+                        }`
                   }
                 >
                   {/* img */}

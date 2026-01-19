@@ -7,10 +7,10 @@ import HistorySection from "@components/sections/History";
 
 export const metadata = {
   title: {
-		default: "History",
-	},
+    default: "History",
+  },
   description: AppData.settings.siteDescription,
-}
+};
 
 async function HistoryPage() {
   return (
@@ -19,5 +19,5 @@ async function HistoryPage() {
       {/* <PartnersSection /> */}
     </>
   );
-};
+}
 export default HistoryPage;

@@ -7,11 +7,11 @@ import ContactFormSection from "@components/sections/Contact";
 import PartnersSection from "@components/sections/Partners";
 
 export const metadata = {
-    title: {
-        default: "Contact",
-    },
-    description: AppData.settings.siteDescription,
-}
+  title: {
+    default: "Contact",
+  },
+  description: AppData.settings.siteDescription,
+};
 
 const ContactPage = () => {
   return (

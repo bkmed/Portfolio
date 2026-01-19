@@ -1,15 +1,15 @@
 ---
 #preview
-title: 'Design a perfect home'
-date: '2022-04-02'
+title: "Design a perfect home"
+date: "2022-04-02"
 image: "/img/blog/1.jpg"
 categories:
-    - Events
+  - Events
 tags:
-    - Branding
-    - Design
-    - Development
-    - UI
+  - Branding
+  - Design
+  - Development
+  - UI
 author: Ben Khedher Mohamed
 short: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos.
 ---

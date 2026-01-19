@@ -69,7 +69,7 @@ info bar
           outline: inherit;
 
           & i {
-            opacity: .7;
+            opacity: 0.7;
 
             &:hover {
               opacity: 1;
@@ -83,7 +83,7 @@ info bar
         z-index: 2;
 
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           bottom: -1px;
           right: 1px;
@@ -94,7 +94,7 @@ info bar
           animation: puls 1s infinite;
           @keyframes puls {
             0% {
-              transform: scale(.6);
+              transform: scale(0.6);
               opacity: 1;
             }
 
@@ -118,7 +118,7 @@ info bar
 
           &:after {
             position: relative;
-            content: 'I am available for CDI/freelance hire';
+            content: "I am available for CDI/freelance hire";
             width: 115px;
             display: block;
             padding: 5px 10px;
@@ -138,7 +138,7 @@ info bar
           }
 
           &:before {
-            content: '';
+            content: "";
             position: absolute;
             height: 5px;
             width: 5px;
@@ -147,7 +147,7 @@ info bar
             opacity: 0;
             background: $deep-color;
             pointer-events: none;
-            transform: translateX(20px)rotate(45deg);
+            transform: translateX(20px) rotate(45deg);
             transition: $tr-md;
             z-index: 99;
           }
@@ -162,7 +162,7 @@ info bar
 
             &:before {
               opacity: 1;
-              transform: translateX(0)rotate(45deg);
+              transform: translateX(0) rotate(45deg);
             }
           }
         }
@@ -184,7 +184,7 @@ info bar
       }
     }
   }
-/* ----- name ----- */
+  /* ----- name ----- */
   .art-name {
     color: $text-color-1;
     transition: $tr-md;
@@ -195,7 +195,6 @@ info bar
     }
 
     &:hover {
-
       & a {
         color: $main-color;
       }
@@ -224,7 +223,7 @@ info bar
           min-height: 18px;
 
           &:after {
-            content: '%';
+            content: "%";
             position: absolute;
             right: -7px;
           }

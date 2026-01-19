@@ -1,147 +1,170 @@
 "use client";
 
-import { Formik } from 'formik';
+import { Formik } from "formik";
 import AppData from "@data/app.json";
+import { useTranslation } from "../_context/TranslationContext";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
   return (
     <>
-        {/* contact form */}
-        <Formik
-        initialValues = {{ email: '', name: '', message: '' }}
-        validate = { values => {
-            const errors = {};
-            if (!values.email) {
-                errors.email = 'Required';
-            } else if (
-                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-            ) {
-                errors.email = 'Invalid email address';
-            }
-            return errors;
+      {/* contact form */}
+      <Formik
+        initialValues={{ email: "", name: "", message: "" }}
+        validate={(values) => {
+          const errors = {};
+          if (!values.email) {
+            errors.email = t("contactForm.validation.required");
+          } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
+            errors.email = t("contactForm.validation.invalidEmail");
+          }
+          return errors;
         }}
-        onSubmit = {( values, { setSubmitting, resetForm } ) => {
-            const form = document.getElementById("contactForm");
-            const status = document.getElementById("contactFormStatus");
-            const data = new FormData();
-            data.append('name', values.name);
-            data.append('email', values.email);
-            data.append('message', values.message);
+        onSubmit={(values, { setSubmitting, resetForm }) => {
+          const form = document.getElementById("contactForm");
+          const status = document.getElementById("contactFormStatus");
+          const data = new FormData();
+          data.append("name", values.name);
+          data.append("email", values.email);
+          data.append("message", values.message);
 
-            fetch(form.action, {
-                method: 'POST',
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                if (response.ok) {
-                    status.innerHTML = "<h5>Thanks, your message is sent successfully.</h5>";
-                   
-                } else {
-                    response.json().then(data => {
-                        if (Object.hasOwn(data, 'errors')) {
-                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                        } else {
-                            status.innerHTML = "<h5>Oops! There was a problem submitting your form</h5>"
-                        }
-                    })
-                }
-               
-            }).catch(error => {
-                status.innerHTML = "<h5>Oops! There was a problem submitting your form</h5>"
-              
+          fetch(form.action, {
+            method: "POST",
+            body: data,
+            headers: {
+              Accept: "application/json",
+            },
+          })
+            .then((response) => {
+              if (response.ok) {
+                status.innerHTML = `<h5>${t("contactForm.status.success")}</h5>`;
+              } else {
+                response.json().then((data) => {
+                  if (Object.hasOwn(data, "errors")) {
+                    status.innerHTML = data["errors"].map((error) => error["message"]).join(", ");
+                  } else {
+                    status.innerHTML = `<h5>${t("contactForm.status.error")}</h5>`;
+                  }
+                });
+              }
+            })
+            .catch((error) => {
+              status.innerHTML = `<h5>${t("contactForm.status.error")}</h5>`;
             });
-            form.reset();
-            resetForm({
-                values: {
-                  name: '',
-                  email: '',
-                  message: '',
-                },
-              });
-            setSubmitting(false);
+          form.reset();
+          resetForm({
+            values: {
+              name: "",
+              email: "",
+              message: "",
+            },
+          });
+          setSubmitting(false);
         }}
-        >
+      >
         {({
-            values,
-            errors,
-            touched,
-            handleChange,
-            handleBlur,
-            handleSubmit,
-            isSubmitting,
-            /* and other goodies */
+          values,
+          errors,
+          touched,
+          handleChange,
+          handleBlur,
+          handleSubmit,
+          isSubmitting,
+          /* and other goodies */
         }) => (
-        <form onSubmit={handleSubmit} id="contactForm" action={AppData.settings.formspreeURL} className="art-contact-form">
+          <form
+            onSubmit={handleSubmit}
+            id="contactForm"
+            action={AppData.settings.formspreeURL}
+            className="art-contact-form"
+          >
             {/* form field */}
             <div className="art-form-field">
-                {/* name input */}
-                <input 
-                    type="text" 
-                    placeholder="Name"
-                    name="name" 
-                    id="name"
-                    className="art-input"
-                    required="required" 
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.name} 
-                />
-                {/* label */}
-                <label  htmlFor="name"><i className="fas fa-user"></i></label>
+              {/* name input */}
+              <input
+                type="text"
+                placeholder={t("contactForm.placeholders.name")}
+                name="name"
+                id="name"
+                className="art-input"
+                required="required"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.name}
+              />
+              {/* label */}
+              <label htmlFor="name">
+                <i className="fas fa-user"></i>
+              </label>
             </div>
             {/* form field end */}
             {/* form field */}
             <div className="art-form-field">
-                {/* email input */}
-                <input 
-                    type="email" 
-                    id="email"
-                    className="art-input"
-                    placeholder="Email"
-                    name="email"
-                    required="required"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.email} 
-                />
-                {/* label */}
-                <label  htmlFor="email"><i className="fas fa-at"></i></label>
-                {errors.email && touched.email && errors.email}
+              {/* email input */}
+              <input
+                type="email"
+                id="email"
+                className="art-input"
+                placeholder={t("contactForm.placeholders.email")}
+                name="email"
+                required="required"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.email}
+              />
+              {/* label */}
+              <label htmlFor="email">
+                <i className="fas fa-at"></i>
+              </label>
+              {errors.email && touched.email && errors.email}
             </div>
             {/* form field end */}
             {/* form field */}
             <div className="art-form-field">
-                {/* message textarea */}
-                <textarea 
-                    placeholder="Message"
-                    name="message" 
-                    id="message"
-                    className="art-input"
-                    required="required"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.message} 
-                />
-                {/* label */}
-                <label  htmlFor="message"><i className="far fa-envelope"></i></label>
-                {errors.message && touched.message && errors.message}
+              {/* message textarea */}
+              <textarea
+                placeholder={t("contactForm.placeholders.message")}
+                name="message"
+                id="message"
+                className="art-input"
+                required="required"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.message}
+              />
+              {/* label */}
+              <label htmlFor="message">
+                <i className="far fa-envelope"></i>
+              </label>
+              {errors.message && touched.message && errors.message}
             </div>
             {/* form field end */}
             {/* button */}
             <div className="art-submit-frame">
-                <button className="art-btn art-btn-md art-submit" disabled={isSubmitting} type="submit"><span>Send message</span></button>
-                {/* success */}
-                <div className="art-success">Success <i className="fas fa-check"></i></div>
+              <button
+                className="art-btn art-btn-md art-submit"
+                disabled={isSubmitting}
+                type="submit"
+              >
+                <span>{t("contactForm.button")}</span>
+              </button>
+              {/* success */}
+              <div className="art-success">
+                {t("contactForm.status.sent")} <i className="fas fa-check"></i>
+              </div>
             </div>
             {/* button end */}
-            
-            <div className="form-status alert-success mil-mb-90" id="contactFormStatus" style={{"display": "none"}} />
-        </form>
+
+            <div
+              className="form-status alert-success mil-mb-90"
+              id="contactFormStatus"
+              style={{ display: "none" }}
+            />
+          </form>
         )}
-        </Formik>
-        {/* contact form end */}
+      </Formik>
+      {/* contact form end */}
     </>
   );
 };

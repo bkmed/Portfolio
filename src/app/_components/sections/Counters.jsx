@@ -30,15 +30,15 @@ const CountersSection = () => {
 
   const counterItems = [
     {
-      label: t('counters.experience'),
+      label: t("counters.experience"),
       value: calculateYearsExperience(Data.items[0].startDate),
-      valueAfter: Data.items[0].valueAfter
+      valueAfter: Data.items[0].valueAfter,
     },
     {
-      label: t('counters.completed'),
+      label: t("counters.completed"),
       value: Data.items[1].value,
-      valueAfter: Data.items[1].valueAfter
-    }
+      valueAfter: Data.items[1].valueAfter,
+    },
   ];
 
   return (

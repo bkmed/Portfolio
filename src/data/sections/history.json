@@ -1,78 +1,78 @@
 {
-    "col1": {
-        "title": "Education",
-        "items": [
-            {
-                "title": "University of Esprit",
-                "subtitle": "Student",
-                "date": "Sep 2015- Oct 2017",
-                "text": "Computer engineering diploma (Master’ s Deg ree), Tunisia tunis",
-                "button": {
-                    "link": "https://esprit.tn/",
-                    "type": "link",
-                    "label": "WebSite"
-                }
-            },
-            {
-                "title": "University of ISEP-BG",
-                "subtitle": "Student",
-                "date": "Sep 2009 - Jul 2011",
-                "text": "Higher Institute of Preparatory Studies in Biology and Geology, Tunisia tunis",
-                "button": {
-                    "link": "http://www.isepbgsoukra.agrinet.tn/",
-                    "type": "link",
-                    "label": "WebSite"
-                }
-            },
-            {
-                "title": "Bachelor’s Degre",
-                "subtitle": "Student",
-                "date": "Sep 2008 - Jul 2009",
-                "text": "Bachelor's Degree in Biology Carthage Byrsa Institute, Tunisia Tunis",
-                "button": {
-                    "link": "https://www.facebook.com/lyceebyrsa/",
-                    "type": "link",
-                    "label": "FaceBook"
-                }
-            }
-        ]
-    },
-    "col2": {
-        "title": "Work History",
-        "items": [
-            {
-                "title": "Leni Tunisia",
-                "subtitle": "Full Stack Developer",
-                "date": "Jul 2020 - Present",
-                "text": "Development of mobile and web applications for smartphones and tablets intended for visitors to places or events.",
-                "button": {
-                    "type": "link",
-                    "link": "https://www.leni.fr/en/accueil-english/",
-                     "label": "WebSite"
-                }
-            },
-            {
-                "title": "Incol",
-                "subtitle": "TECH LEAD MOBILE",
-                "date": "Oct 2017 - Jun 2020",
-                "text": "Development of the prototype and then the MVP of the Welcol mobile application, a platform for networking and remote consultation via video call in the field of well-being.",
-                "button": {
-                    "type": "link",
-                    "link": "https://www.linkedin.com/company/incolsystem/",
-                     "label": "WebSite"
-                }
-            },
-            {
-                "title": "Forsyslab",
-                "subtitle": "Full Stack Engineer",
-                "date": "Jan 2017 - Jul 2017",
-                "text": "Development of the prototype, then of the MVP of the Talquest platform, a professional social network which aims to help people find job opportunities, by introducing concepts and algorithms to match talents with job offers.",
-                "button": {
-                    "type": "link",
-                    "link": "https://www.forsyslab.com/",
-                    "label": "WebSite"
-                }
-            }
-        ]
-    }
+  "col1": {
+    "title": "Education",
+    "items": [
+      {
+        "title": "University of Esprit",
+        "subtitle": "Student",
+        "date": "Sep 2015- Oct 2017",
+        "text": "Computer engineering diploma (Master’ s Deg ree), Tunisia tunis",
+        "button": {
+          "link": "https://esprit.tn/",
+          "type": "link",
+          "label": "WebSite"
+        }
+      },
+      {
+        "title": "University of ISEP-BG",
+        "subtitle": "Student",
+        "date": "Sep 2009 - Jul 2011",
+        "text": "Higher Institute of Preparatory Studies in Biology and Geology, Tunisia tunis",
+        "button": {
+          "link": "http://www.isepbgsoukra.agrinet.tn/",
+          "type": "link",
+          "label": "WebSite"
+        }
+      },
+      {
+        "title": "Bachelor’s Degre",
+        "subtitle": "Student",
+        "date": "Sep 2008 - Jul 2009",
+        "text": "Bachelor's Degree in Biology Carthage Byrsa Institute, Tunisia Tunis",
+        "button": {
+          "link": "https://www.facebook.com/lyceebyrsa/",
+          "type": "link",
+          "label": "FaceBook"
+        }
+      }
+    ]
+  },
+  "col2": {
+    "title": "Work History",
+    "items": [
+      {
+        "title": "Leni Tunisia",
+        "subtitle": "Full Stack Developer",
+        "date": "Jul 2020 - Present",
+        "text": "Development of mobile and web applications for smartphones and tablets intended for visitors to places or events.",
+        "button": {
+          "type": "link",
+          "link": "https://www.leni.fr/en/accueil-english/",
+          "label": "WebSite"
+        }
+      },
+      {
+        "title": "Incol",
+        "subtitle": "TECH LEAD MOBILE",
+        "date": "Oct 2017 - Jun 2020",
+        "text": "Development of the prototype and then the MVP of the Welcol mobile application, a platform for networking and remote consultation via video call in the field of well-being.",
+        "button": {
+          "type": "link",
+          "link": "https://www.linkedin.com/company/incolsystem/",
+          "label": "WebSite"
+        }
+      },
+      {
+        "title": "Forsyslab",
+        "subtitle": "Full Stack Engineer",
+        "date": "Jan 2017 - Jul 2017",
+        "text": "Development of the prototype, then of the MVP of the Talquest platform, a professional social network which aims to help people find job opportunities, by introducing concepts and algorithms to match talents with job offers.",
+        "button": {
+          "type": "link",
+          "link": "https://www.forsyslab.com/",
+          "label": "WebSite"
+        }
+      }
+    ]
+  }
 }

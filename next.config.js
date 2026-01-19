@@ -4,10 +4,10 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  assetPrefix: '/Portfolio/',
-  basePath: '/Portfolio',
-  distDir: 'out',
-  output: 'export'
+  assetPrefix: "/Portfolio/",
+  basePath: "/Portfolio",
+  distDir: "out",
+  output: "export",
 };
 
-module.exports = nextConfig
+module.exports = nextConfig;

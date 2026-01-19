@@ -1,30 +1,30 @@
 {
-    "title": "Recommendations",
-    "items": [
-        {
-            "name": "Karim JLASSI",
-            "role": "Director Leni Tunisia",
-            "contact": "https://www.linkedin.com/in/karimjlassi/"
-        },
-        {
-            "name": "Sami BEN GAIDA",
-            "role": "PM & Factory lead",
-            "contact": "https://www.linkedin.com/in/sbengaida/"
-        },
-        {
-            "name": "Chayma Omrani",
-            "role": "Backend Developer",
-            "contact": "https://www.linkedin.com/in/omranichayma/"
-        },
-        {
-            "name": "Elies Chelbi",
-            "role": "Full stack Developer",
-            "contact": "https://www.linkedin.com/in/elies-chelbi-55429b160/"
-        },
-        {
-            "name": "Mehdi Jarraya",
-            "role": "Full-Stack Engineer",
-            "contact": "https://www.linkedin.com/in/mehdi-jarraya-b198aba7/"
-        }    
-    ]
+  "title": "Recommendations",
+  "items": [
+    {
+      "name": "Karim JLASSI",
+      "role": "Director Leni Tunisia",
+      "contact": "https://www.linkedin.com/in/karimjlassi/"
+    },
+    {
+      "name": "Sami BEN GAIDA",
+      "role": "PM & Factory lead",
+      "contact": "https://www.linkedin.com/in/sbengaida/"
+    },
+    {
+      "name": "Chayma Omrani",
+      "role": "Backend Developer",
+      "contact": "https://www.linkedin.com/in/omranichayma/"
+    },
+    {
+      "name": "Elies Chelbi",
+      "role": "Full stack Developer",
+      "contact": "https://www.linkedin.com/in/elies-chelbi-55429b160/"
+    },
+    {
+      "name": "Mehdi Jarraya",
+      "role": "Full-Stack Engineer",
+      "contact": "https://www.linkedin.com/in/mehdi-jarraya-b198aba7/"
+    }
+  ]
 }

@@ -1,14 +1,14 @@
 {
-    "items": [
-        {
-            "label": "Years Experience",
-            "startDate": "2017-10-17",
-            "valueAfter": "+"
-        },
-        {
-            "label": "Completed Projects",
-            "value": "16",
-            "valueAfter": "+"
-        }
-    ]
+  "items": [
+    {
+      "label": "Years Experience",
+      "startDate": "2017-10-17",
+      "valueAfter": "+"
+    },
+    {
+      "label": "Completed Projects",
+      "value": "16",
+      "valueAfter": "+"
+    }
+  ]
 }

@@ -13,9 +13,7 @@ const ImgViews = ({ close, src }) => {
         tabIndex={-1}
         style={{ overflow: "hidden auto" }}
       >
-        <div
-          className={`mfp-container mfp-s-ready mfp-iframe-holder mfp-img-container`}
-        >
+        <div className={`mfp-container mfp-s-ready mfp-iframe-holder mfp-img-container`}>
           <div className="mfp-content" ref={domNode}>
             <div className="mfp-iframe-scaler">
               <img className="mfp-img" src={src} />
@@ -48,10 +46,6 @@ const ImageView = () => {
       });
     }, 1500);
   }, []);
-  return (
-    <Fragment>
-      {img && <ImgViews close={() => setImg(false)} src={imgValue} />}
-    </Fragment>
-  );
+  return <Fragment>{img && <ImgViews close={() => setImg(false)} src={imgValue} />}</Fragment>;
 };
 export default ImageView;

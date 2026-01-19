@@ -32,12 +32,12 @@ export const SliderProps = {
       delay: 5000,
     },
     pagination: {
-      el: '.art-project-slider-navigation .swiper-pagination',
+      el: ".art-project-slider-navigation .swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: '.art-works-swiper-next',
-      prevEl: '.art-works-swiper-prev',
+      nextEl: ".art-works-swiper-next",
+      prevEl: ".art-works-swiper-prev",
     },
     breakpoints: {
       1500: {
@@ -56,17 +56,34 @@ export const SliderProps = {
     spaceBetween: 30,
     speed: 1400,
     autoplay: {
-      delay: 5000
+      delay: 5000,
     },
     pagination: {
-      el: '.art-testimonial-slider-navigation .swiper-pagination',
+      el: ".art-testimonial-slider-navigation .swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: '.art-testi-swiper-next',
-      prevEl: '.art-testi-swiper-prev',
+      nextEl: ".art-testi-swiper-next",
+      prevEl: ".art-testi-swiper-prev",
     },
-    modules: [Pagination, Navigation, Autoplay, EffectFade, Grid, EffectCreative, Virtual, HashNavigation, History, Thumbs, Scrollbar, Keyboard, A11y, Parallax, FreeMode, Mousewheel],
+    modules: [
+      Pagination,
+      Navigation,
+      Autoplay,
+      EffectFade,
+      Grid,
+      EffectCreative,
+      Virtual,
+      HashNavigation,
+      History,
+      Thumbs,
+      Scrollbar,
+      Keyboard,
+      A11y,
+      Parallax,
+      FreeMode,
+      Mousewheel,
+    ],
     breakpoints: {
       1500: {
         slidesPerView: 3,
@@ -90,14 +107,31 @@ export const SliderProps = {
       delay: 5000,
     },
     pagination: {
-      el: '.art-blog-slider-navigation .swiper-pagination',
+      el: ".art-blog-slider-navigation .swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: '.art-blog-swiper-next',
-      prevEl: '.art-blog-swiper-prev',
+      nextEl: ".art-blog-swiper-next",
+      prevEl: ".art-blog-swiper-prev",
     },
-    modules: [Pagination, Navigation, Autoplay, EffectFade, Grid, EffectCreative, Virtual, HashNavigation, History, Thumbs, Scrollbar, Keyboard, A11y, Parallax, FreeMode, Mousewheel],
+    modules: [
+      Pagination,
+      Navigation,
+      Autoplay,
+      EffectFade,
+      Grid,
+      EffectCreative,
+      Virtual,
+      HashNavigation,
+      History,
+      Thumbs,
+      Scrollbar,
+      Keyboard,
+      A11y,
+      Parallax,
+      FreeMode,
+      Mousewheel,
+    ],
     breakpoints: {
       1200: {
         slidesPerView: 3,
@@ -109,5 +143,5 @@ export const SliderProps = {
         slidesPerView: 1,
       },
     },
-  }
+  },
 };
