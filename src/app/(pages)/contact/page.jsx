@@ -1,10 +1,8 @@
 import React from "react";
-
 import AppData from "@data/app.json";
 
 import ContactInfoSection from "@components/sections/ContactInfo";
 import ContactFormSection from "@components/sections/Contact";
-import PartnersSection from "@components/sections/Partners";
 
 export const metadata = {
   title: {
@@ -18,7 +16,6 @@ const ContactPage = () => {
     <>
       <ContactInfoSection paddingTop={1} />
       <ContactFormSection />
-      {/* <PartnersSection /> */}
     </>
   );
 };

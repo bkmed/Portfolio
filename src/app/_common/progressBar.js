@@ -1,4 +1,3 @@
-/* global ProgressBar */
 import ProgressBar from "progressbar.js";
 
 export const ProgressBarAnim = () => {

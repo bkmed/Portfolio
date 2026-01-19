@@ -1,42 +1,57 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import AppData from "@data/app.json";
+import { useState, useEffect, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useTranslation } from "../../_context/TranslationContext";
 import { useTheme } from "../../_context/ThemeContext";
+import AppData from "@data/app.json"; // Moved AppData import here for better organization
 
 const MenuBarModule = () => {
   const [toggle, setToggle] = useState(false);
   const [activeSubMenu, setActiveSubMenu] = useState(null);
   const asPath = usePathname();
-  const [curLabel, setCurLabel] = useState(0);
   const { lang, setLang, t } = useTranslation();
   const { theme, toggleTheme } = useTheme();
 
-  const isPathActive = (path) => {
-    return asPath.indexOf(path) !== -1 && asPath === path;
-  };
+  // State to hold the current page's menu item for display
+  const [currentPageMenuItem, setCurrentPageMenuItem] = useState(null);
+
+  const isPathActive = useCallback(
+    (path) => {
+      return asPath.indexOf(path) !== -1 && asPath === path;
+    },
+    [asPath]
+  );
 
   const handleSubMenuClick = (index, e) => {
     e.preventDefault();
     setActiveSubMenu(activeSubMenu === index ? null : index);
   };
 
-  const menuLabels = (item) => {
-    isPathActive(item.link) ? setCurLabel(item) : 0;
-  };
-
+  // Effect to update the current page menu item and handle mobile menu toggle
   useEffect(() => {
-    // close mobile menu
-    setToggle(false);
+    // Close mobile menu
     if (toggle) {
+      setToggle(false);
       document.querySelector(".art-content").classList.remove("art-active");
     }
 
-    AppData.header.menu.map((item) => menuLabels(item));
-  }, [asPath]);
+    // Find the current active menu item for display
+    let foundItem = null;
+    AppData.header.menu.forEach((item) => {
+      if (isPathActive(item.link)) {
+        foundItem = item;
+      } else if (item.children && item.children.length > 0) {
+        item.children.forEach((subitem) => {
+          if (isPathActive(subitem.link)) {
+            foundItem = subitem;
+          }
+        });
+      }
+    });
+    setCurrentPageMenuItem(foundItem);
+  }, [asPath, isPathActive, toggle]); // Added toggle to dependencies to re-run when toggle changes
 
   const menuOpen = () => {
     setToggle(!toggle);
@@ -59,7 +74,7 @@ const MenuBarModule = () => {
               {/* menu bar button */}
               <div
                 className={`art-menu-bar-btn ${toggle ? "art-active" : ""}`}
-                onClick={() => menuOpen()}
+                onClick={menuOpen} // Simplified onClick handler
               >
                 {/* icon */}
                 <span></span>
@@ -145,8 +160,10 @@ const MenuBarModule = () => {
 
             {/* current page title */}
             <div className="art-current-page">
-              {curLabel !== 0 ? (
-                <Link href={curLabel.link}>{t(`menu.${curLabel.label.toLowerCase()}`)}</Link>
+              {currentPageMenuItem ? (
+                <Link href={currentPageMenuItem.link}>
+                  {t(`menu.${currentPageMenuItem.label.toLowerCase()}`)}
+                </Link>
               ) : (
                 <Link href="/">{t("menu.home")}</Link>
               )}

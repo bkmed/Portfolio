@@ -7,7 +7,7 @@ import ImageView from "@components/ImageView";
 const ImagesGallery = ({ items, title }) => {
   // Isotope
   const isotope = useRef();
-  const [filterKey, setFilterKey] = useState("*");
+  const [filterKey] = useState("*");
 
   useEffect(() => {
     //setTimeout(() => {

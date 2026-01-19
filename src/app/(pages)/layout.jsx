@@ -1,7 +1,5 @@
 "use client";
 
-import dynamic from "next/dynamic";
-
 import Footer from "@layouts/footers/Index";
 import MenuBar from "@layouts/menu-bar/Index";
 import TopBackground from "@layouts/top-background/Index";

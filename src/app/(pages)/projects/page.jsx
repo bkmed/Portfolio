@@ -1,10 +1,6 @@
 import React, { Suspense } from "react";
-import dynamic from "next/dynamic";
-
 import AppData from "@data/app.json";
-
-import { ProjectsMasonry } from "@components/DynamicComponents";
-
+import ProjectsMasonry from "@components/ProjectsMasonry";
 import { getSortedProjectsData } from "@library/projects";
 
 export const metadata = {

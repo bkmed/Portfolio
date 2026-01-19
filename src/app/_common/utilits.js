@@ -3,7 +3,7 @@ export const AnchorScroll = () => {
   const links = document.querySelectorAll('a[href^="#"]');
 
   links.forEach((link) => {
-    link.addEventListener("click", (e) => {
+    link.addEventListener("click", () => {
       event.preventDefault();
 
       var target = document.querySelector(link.getAttribute("href"));

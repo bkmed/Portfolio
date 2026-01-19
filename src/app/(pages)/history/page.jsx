@@ -2,7 +2,6 @@ import React from "react";
 
 import AppData from "@data/app.json";
 
-import PartnersSection from "@components/sections/Partners";
 import HistorySection from "@components/sections/History";
 
 export const metadata = {

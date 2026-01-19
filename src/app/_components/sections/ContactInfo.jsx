@@ -1,6 +1,5 @@
 "use client";
 
-import Data from "@data/sections/contact-info.json";
 import { useTranslation } from "../../_context/TranslationContext";
 
 const ContactInfoSection = () => {

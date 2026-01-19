@@ -1,13 +1,10 @@
 import React from "react";
-import dynamic from "next/dynamic";
-
 import AppData from "@data/app.json";
 
 import HeroSection from "@components/sections/Hero";
 import CountersSection from "@components/sections/Counters";
 import ServicesSection from "@components/sections/Services";
 import PricingSection from "@components/sections/Pricing";
-import PartnersSection from "@components/sections/Partners";
 
 import { TestimonialSlider } from "@components/DynamicComponents";
 

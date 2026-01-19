@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "npx serve@latest out",
-    "lint": "next lint",
+    "lint": "eslint src --ext .js,.jsx",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "predeploy": "npm run build",

@@ -49,7 +49,7 @@ const ContactForm = () => {
                 });
               }
             })
-            .catch((error) => {
+            .catch(() => {
               status.innerHTML = `<h5>${t("contactForm.status.error")}</h5>`;
             });
           form.reset();

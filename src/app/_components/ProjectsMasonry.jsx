@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import Link from "next/link";
 import ImageView from "@components/ImageView";
 
 import { useTranslation } from "../_context/TranslationContext";
