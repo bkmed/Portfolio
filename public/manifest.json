@@ -1,21 +1,21 @@
 {
-    "name": "BK Portfolio",
-    "short_name": "Portfolio",
-    "description": "Professional Portfolio of Mohamed Ben Khedher",
-    "start_url": "/Portfolio/",
-    "display": "standalone",
-    "background_color": "#1e1e28",
-    "theme_color": "#ffc107",
-    "icons": [
-        {
-            "src": "/Portfolio/img/icons/icon.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/Portfolio/img/icons/icon.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
+  "name": "BK Portfolio",
+  "short_name": "Portfolio",
+  "description": "Professional Portfolio of Mohamed Ben Khedher",
+  "start_url": "/Portfolio/",
+  "display": "standalone",
+  "background_color": "#1e1e28",
+  "theme_color": "#ffc107",
+  "icons": [
+    {
+      "src": "/Portfolio/img/icons/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Portfolio/img/icons/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

@@ -29,14 +29,14 @@ const MenuBarModule = () => {
     setActiveSubMenu(activeSubMenu === index ? null : index);
   };
 
-  // Effect to update the current page menu item and handle mobile menu toggle
+  // Effect to close mobile menu on path change
   useEffect(() => {
-    // Close mobile menu
-    if (toggle) {
-      setToggle(false);
-      document.querySelector(".art-content").classList.remove("art-active");
-    }
+    setToggle(false);
+    document.querySelector(".art-content").classList.remove("art-active");
+  }, [asPath]);
 
+  // Effect to update the current page menu item
+  useEffect(() => {
     // Find the current active menu item for display
     let foundItem = null;
     AppData.header.menu.forEach((item) => {
@@ -51,7 +51,7 @@ const MenuBarModule = () => {
       }
     });
     setCurrentPageMenuItem(foundItem);
-  }, [asPath, isPathActive, toggle]); // Added toggle to dependencies to re-run when toggle changes
+  }, [asPath, isPathActive]);
 
   const menuOpen = () => {
     setToggle(!toggle);
