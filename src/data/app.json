@@ -106,6 +106,14 @@
         "link": "/projects",
         "children": [
           {
+            "label": "RhManagment",
+            "link": "/projects"
+          },
+          {
+            "label": "Medicare",
+            "link": "/projects"
+          },
+          {
             "label": "AppKiosk",
             "link": "/projects"
           }

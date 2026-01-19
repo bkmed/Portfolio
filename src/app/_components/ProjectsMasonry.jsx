@@ -108,14 +108,12 @@ const ProjectsMasonry = ({ projects, categories, layout = "masonry", columns = 2
                   href={item.image}
                   className={
                     layout == "masonry"
-                      ? `art-a art-portfolio-item-frame art-${
-                          columns == 3 && item.masonrySize == "horizontal"
-                            ? "square"
-                            : item.masonrySize
-                        }`
-                      : `art-a art-portfolio-item-frame art-${
-                          columns == 3 ? "square" : "horizontal"
-                        }`
+                      ? `art-a art-portfolio-item-frame art-${columns == 3 && item.masonrySize == "horizontal"
+                        ? "square"
+                        : item.masonrySize
+                      }`
+                      : `art-a art-portfolio-item-frame art-${columns == 3 ? "square" : "horizontal"
+                      }`
                   }
                 >
                   {/* img */}
@@ -134,6 +132,8 @@ const ProjectsMasonry = ({ projects, categories, layout = "masonry", columns = 2
                   <a
                     href={item.description.button.link}
                     className="art-link art-color-link art-w-chevron"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     {item.description.button.label}
                   </a>
