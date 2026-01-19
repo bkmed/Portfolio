@@ -1,3 +1,4 @@
+@use "config" as *;
 /* ------------------------------
 
 info bar
@@ -6,6 +7,7 @@ info bar
 
 .art-info-bar {
   padding: 0 15px;
+
   /* ----- header ----- */
   & .art-header {
     position: absolute;
@@ -92,6 +94,7 @@ info bar
           width: 23px;
           border-radius: 50%;
           animation: puls 1s infinite;
+
           @keyframes puls {
             0% {
               transform: scale(0.6);
@@ -184,6 +187,7 @@ info bar
       }
     }
   }
+
   /* ----- name ----- */
   .art-name {
     color: $text-color-1;
@@ -200,6 +204,7 @@ info bar
       }
     }
   }
+
   /* ----- language skills ----- */
   & .art-lang-skills {
     display: flex;
@@ -231,6 +236,7 @@ info bar
       }
     }
   }
+
   /* ----- hard skills ----- */
   & .art-hard-skills {
     & .art-hard-skills-item {
@@ -255,6 +261,7 @@ info bar
       }
     }
   }
+
   /* ----- knowledge ----- */
   & .art-knowledge-list {
     padding-left: 0;
@@ -279,12 +286,14 @@ info bar
       }
     }
   }
+
   /* ----- info bar links ----- */
   & .art-links-frame {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
+
   /* ----- social links ----- */
   & .art-ls-social {
     display: flex;
@@ -319,6 +328,7 @@ info bar
     &:first-child {
       stroke: $deep-color;
     }
+
     &:last-child {
       stroke: $main-color;
     }
@@ -330,6 +340,7 @@ info bar
     &:first-child {
       stroke: $deep-color;
     }
+
     &:last-child {
       stroke: $main-color;
     }

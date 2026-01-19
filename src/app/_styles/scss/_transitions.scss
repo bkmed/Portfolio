@@ -1,3 +1,5 @@
+@use "config" as *;
+
 /* ------------------------------
 
 transitions
@@ -6,6 +8,7 @@ transitions
 .art-a {
   transition: $tr-lg;
 }
+
 /* ----- in animation ----- */
 .transition-fade {
   transition: $tr-lg;
@@ -22,6 +25,7 @@ transitions
     }
   }
 }
+
 /* ----- out animation ----- */
 html.is-animating .transition-fade {
   opacity: 0;
@@ -33,26 +37,31 @@ html.is-animating .transition-fade {
 }
 
 html.is-animating {
+
   & .art-a,
   & .art-current-page {
     opacity: 0;
   }
 }
+
 /* ----- in animation ----- */
 .fade-right {
   transform: translateX(0);
   opacity: 1;
 }
+
 /* ----- out animation ----- */
 html.is-animating .fade-right {
   transform: translateX(-60px);
   opacity: 0;
 }
+
 /* ----- in animation ----- */
 .fade-left {
   transform: translateX(0);
   opacity: 1;
 }
+
 /* ----- out animation ----- */
 html.is-animating .fade-left {
   transform: translateX(60px);

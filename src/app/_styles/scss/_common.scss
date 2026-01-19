@@ -1,3 +1,4 @@
+@use "config" as *;
 /* ------------------------------
 
 common
@@ -17,6 +18,7 @@ body {
   letter-spacing: 0.5px;
   font-smooth: subpixel-antialiased;
 }
+
 /* ----- title defaults ----- */
 
 h1,
@@ -50,6 +52,7 @@ h6 {
   font-size: 13px;
   font-weight: 400;
 }
+
 /* ----- text config ----- */
 .art-sm-text {
   font-size: 12px;
@@ -62,18 +65,21 @@ h6 {
 .art-white {
   color: $text-color-1;
 }
+
 /* ----- container ----- */
 .container-fluid {
   overflow: hidden;
   padding: 0 30px;
   position: relative;
 }
+
 /* ----- buttons frame ----- */
 .art-buttons-frame {
   & a {
     margin-right: 15px;
   }
 }
+
 /* ----- suptitle ----- */
 .art-el-suptitle {
   margin-top: 5px;
@@ -81,6 +87,7 @@ h6 {
   font-style: italic;
   font-size: 12px;
 }
+
 /* ----- divider ----- */
 .art-ls-divider {
   background: $text-color-3;
@@ -88,6 +95,7 @@ h6 {
   height: 1px;
   opacity: 0.3;
 }
+
 /* ----- image defaults ----- */
 .art-img-default {
   width: 100%;
@@ -108,6 +116,7 @@ a {
     outline: inherit;
   }
 }
+
 /* ----- table ----- */
 .art-table {
   color: $text-color-2;
@@ -130,12 +139,13 @@ a {
         padding-right: 20px;
       }
 
-      & > span:nth-child(2) {
+      &>span:nth-child(2) {
         text-align: right;
       }
     }
   }
 }
+
 /* ----- quote ----- */
 blockquote {
   margin-top: 30px;
@@ -175,6 +185,7 @@ blockquote {
     transform: rotate(180deg);
   }
 }
+
 /* ----- list ----- */
 .art-custom-list {
   padding-left: 25px;
@@ -199,6 +210,7 @@ blockquote {
     }
   }
 }
+
 /* ------------------------------
 
 link
@@ -245,6 +257,7 @@ a.art-link {
 
   &.art-w-chevron {
     padding-right: 10px;
+
     &:after {
       position: absolute;
       font-family: "Font Awesome 5 free";
@@ -299,6 +312,7 @@ a.art-link {
     }
   }
 }
+
 /* ------------------------------
 
 button
@@ -339,6 +353,7 @@ button
     color: $content-color;
   }
 }
+
 /* ------------------------------
 
 space
@@ -436,6 +451,7 @@ popup content
   .popup-arrow path {
     fill: rgb(43, 43, 53);
   }
+
   .art-testimonial {
     width: 600px;
     max-width: 100%;
@@ -483,6 +499,7 @@ popup content
   .mask-object {
     width: 50vw;
   }
+
   .error-page__num {
     font-size: 160px;
     line-height: 160px;
@@ -493,6 +510,7 @@ popup content
   .mask-object {
     width: 80vw;
   }
+
   .error-page__num {
     font-size: 120px;
     line-height: 120px;

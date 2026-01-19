@@ -1,3 +1,5 @@
+@use "config" as *;
+
 /* ------------------------------
 
 burger button
@@ -45,15 +47,19 @@ burger button
   &.art-active {
     & span {
       transform: rotate(45deg);
+
       &:before {
         transform: translate(0px, 5px) rotate(-90deg);
       }
+
       &:after {
         transform: translate(0px, -5px) rotate(-90deg);
       }
     }
   }
+
   &:hover {
+
     & span,
     & span:after,
     & span:before {

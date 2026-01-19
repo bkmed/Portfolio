@@ -1,3 +1,5 @@
+@use "config" as *;
+
 /* ------------------------------
 
 app marcup
@@ -20,6 +22,7 @@ app marcup
     background-image: $top-bg-gradient;
   }
 }
+
 /* ----- preloader ----- */
 .art-preloader {
   margin: 15px;
@@ -53,16 +56,19 @@ app marcup
     }
   }
 }
+
 .art-preloader-load {
   & path {
     &:first-child {
       stroke: $deep-color;
     }
+
     &:last-child {
       stroke: $main-color;
     }
   }
 }
+
 /* ----- scroll frame ----- */
 .art-scroll-frame {
   width: 100%;
@@ -79,6 +85,7 @@ app marcup
   opacity: 0;
   pointer-events: none;
 }
+
 /* ----- app ----- */
 .art-app {
   padding: 15px;
@@ -95,6 +102,7 @@ app marcup
   ::-webkit-scrollbar {
     display: none;
   }
+
   /* ----- mobile top bar ----- */
   & .art-mobile-top-bar {
     position: fixed;
@@ -125,6 +133,7 @@ app marcup
       position: relative;
       display: flex;
       flex-wrap: nowrap;
+
       /* ----- info bar ----- */
       & .art-info-bar {
         background: $info-bar-1-color;
@@ -170,6 +179,7 @@ app marcup
           }
         }
       }
+
       /* ----- content ----- */
       & .art-content {
         position: relative;
@@ -200,6 +210,7 @@ app marcup
           }
         }
       }
+
       /* ----- menu bar ----- */
       & .art-menu-bar {
         background: $info-bar-1-color;
@@ -247,23 +258,27 @@ app marcup
     }
   }
 }
+
 /* ------------------------------
 
 app marcup (after 920px)
 
 ------------------------------ */
 @media (max-width: 920px) {
+
   /* ----- container ----- */
   .container-fluid {
     padding-left: 15px;
     padding-right: 15px;
   }
+
   /* ----- preloader ----- */
   .art-preloader {
     margin: 0;
     width: 100vw;
     height: 100vh;
   }
+
   /* ----- scroll frame ----- */
   .art-scroll-frame {
     height: 100vh;
@@ -271,6 +286,7 @@ app marcup (after 920px)
 
   .art-app {
     padding: 0;
+
     /* ----- mobile top bar ----- */
     & .art-mobile-top-bar {
       display: flex;
@@ -282,6 +298,7 @@ app marcup (after 920px)
 
       & .art-app-container {
         width: 100%;
+
         /* ----- info bar ----- */
         & .art-info-bar {
           position: absolute;
@@ -312,6 +329,7 @@ app marcup (after 920px)
             }
           }
         }
+
         /* ----- content ----- */
         & .art-content {
           position: relative;
@@ -333,6 +351,7 @@ app marcup (after 920px)
             }
           }
         }
+
         /* ----- menu bar ----- */
         & .art-menu-bar {
           position: absolute;
@@ -359,6 +378,7 @@ app marcup (after 920px)
     }
   }
 }
+
 /* ------------------------------
 
 app marcup (after 290px)
@@ -366,12 +386,14 @@ app marcup (after 290px)
 ------------------------------ */
 @media (max-width: 290px) {
   .art-app {
+
     /* ----- info bar ----- */
     & .art-info-bar {
       width: 100vw;
     }
   }
 }
+
 /* ------------------------------
 
 app marcup (after 230px)
@@ -379,6 +401,7 @@ app marcup (after 230px)
 ------------------------------ */
 @media (max-width: 230px) {
   .art-app {
+
     /* ----- menu bar ----- */
     & .art-menu-bar {
       width: 100vw;
