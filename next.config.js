@@ -7,6 +7,7 @@ const nextConfig = {
   assetPrefix: "/Portfolio/",
   basePath: "/Portfolio",
   output: "export",
+  outputFileTracingRoot: __dirname,
 };
 
 module.exports = nextConfig;

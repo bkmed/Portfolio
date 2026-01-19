@@ -91,7 +91,9 @@ const ProjectsMasonryContent = ({ projects, categories, layout = "masonry", colu
                       href="#"
                       key={`projects-filter-item-${key}`}
                       data-filter={`.${item.slug}`}
-                      className={filterKey === `.${item.slug}` ? "art-link art-current" : "art-link"}
+                      className={
+                        filterKey === `.${item.slug}` ? "art-link art-current" : "art-link"
+                      }
                       onClick={(e) => handleFilterKeyChange(`.${item.slug}`, e)}
                     >
                       {item.name}
@@ -109,19 +111,24 @@ const ProjectsMasonryContent = ({ projects, categories, layout = "masonry", colu
           <div className={`art-grid art-grid-${columns}-col art-gallery`}>
             {/* grid item */}
             {projects.map((item, key) => (
-              <div className={`art-grid-item ${item.category_slug} id-${item.id}`} key={`projects-item-${key}`}>
+              <div
+                className={`art-grid-item ${item.category_slug} id-${item.id}`}
+                key={`projects-item-${key}`}
+              >
                 {/* grid item frame */}
                 <a
                   data-fancybox="gallery"
                   href={item.image}
                   className={
                     layout == "masonry"
-                      ? `art-a art-portfolio-item-frame art-${columns == 3 && item.masonrySize == "horizontal"
-                        ? "square"
-                        : item.masonrySize
-                      }`
-                      : `art-a art-portfolio-item-frame art-${columns == 3 ? "square" : "horizontal"
-                      }`
+                      ? `art-a art-portfolio-item-frame art-${
+                          columns == 3 && item.masonrySize == "horizontal"
+                            ? "square"
+                            : item.masonrySize
+                        }`
+                      : `art-a art-portfolio-item-frame art-${
+                          columns == 3 ? "square" : "horizontal"
+                        }`
                   }
                 >
                   {/* img */}

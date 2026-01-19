@@ -61,16 +61,20 @@ content
     display: flex;
     padding: 60px;
     width: 100%;
-    background-image: linear-gradient(90deg,
-        var(--banner-overlay-1) 15%,
-        var(--banner-overlay-2) 50%,
-        var(--banner-overlay-3) 100%);
+    background-image: linear-gradient(
+      90deg,
+      var(--banner-overlay-1) 15%,
+      var(--banner-overlay-2) 50%,
+      var(--banner-overlay-3) 100%
+    );
 
     &.art-side-overlay {
-      background-image: linear-gradient(90deg,
-          var(--banner-overlay-1) 15%,
-          var(--banner-overlay-2) 50%,
-          rgba(43, 43, 53, 0) 100%);
+      background-image: linear-gradient(
+        90deg,
+        var(--banner-overlay-1) 15%,
+        var(--banner-overlay-2) 50%,
+        rgba(43, 43, 53, 0) 100%
+      );
     }
 
     & .art-banner-title {
@@ -524,8 +528,8 @@ content
   outline: none;
 }
 
-.art-contact-form .art-input.art-active+label,
-.art-contact-form .art-input:focus+label {
+.art-contact-form .art-input.art-active + label,
+.art-contact-form .art-input:focus + label {
   background: $main-color;
   color: $info-bar-1-color;
 }
@@ -1241,11 +1245,11 @@ content (after 500px)
       Content Formatting
 -------------------------------- */
 
-.art-text>*:first-child {
+.art-text > *:first-child {
   margin-top: 0;
 }
 
-.art-text>*:last-child {
+.art-text > *:last-child {
   margin-bottom: 0;
 }
 
@@ -1260,7 +1264,7 @@ content (after 500px)
   max-width: 100%;
 }
 
-.art-text img+figure {
+.art-text img + figure {
   margin-top: 20px;
 }
 
@@ -1322,11 +1326,11 @@ content (after 500px)
   word-wrap: break-word;
 }
 
-.art-text>*:first-child {
+.art-text > *:first-child {
   margin-top: 0;
 }
 
-.art-text>*:last-child {
+.art-text > *:last-child {
   margin-bottom: 0;
 }
 
@@ -1380,27 +1384,27 @@ content (after 500px)
   margin-left: 10px;
 }
 
-.art-text ul>li,
-.art-text ol>li {
+.art-text ul > li,
+.art-text ol > li {
   margin: 5px 0;
   padding: 0 0 0 14px;
   position: relative;
   font-weight: 400;
 }
 
-.art-text ul>li a,
-.art-text ol>li a {
+.art-text ul > li a,
+.art-text ol > li a {
   color: #fafafc;
 }
 
-.art-text ol>li {
+.art-text ol > li {
   margin: 5px 0;
   padding: 0;
   position: relative;
   font-weight: 400;
 }
 
-.art-text ul>li:before {
+.art-text ul > li:before {
   margin: 0;
   content: "";
   position: absolute;
@@ -1426,17 +1430,17 @@ content (after 500px)
   line-height: 1.2;
 }
 
-.art-text h1+h2,
-.art-text h2+h3,
-.art-text h3+h4,
-.art-text h4+h5,
-.art-text h5+h6,
+.art-text h1 + h2,
+.art-text h2 + h3,
+.art-text h3 + h4,
+.art-text h4 + h5,
+.art-text h5 + h6,
 .art-text h6 {
   margin-top: 1.25rem;
 }
 
-.art-text>*:first-child,
-.art-text>div>*:first-child {
+.art-text > *:first-child,
+.art-text > div > *:first-child {
   margin-top: 0;
 }
 

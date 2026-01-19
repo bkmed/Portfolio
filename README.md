@@ -1,6 +1,8 @@
 # Portfolio
- Ben Khedher Mohamed - Personal Portfolio React Next.JS   
+
+Ben Khedher Mohamed - Personal Portfolio React Next.JS  
  [This is the link to my Portfolio](https://bkmed.github.io/Portfolio/)
+
 # 🚀 Mohamed Ben Khedher | Full-Stack & Mobile Engineer
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/ben-khedher-mohamed-78aa1510a/)
@@ -24,9 +26,11 @@ Professional portfolio built with **Next.js 16**, featuring a cutting-edge UI/UX
 ## 🌟 Featured Projects
 
 ### 💼 [RhManagment](https://github.com/bkmed/RhManagment)
+
 A comprehensive Human Resources Management system designed to streamline employee tracking, performance reviews, and organizational management.
 
 ### 💊 [MedicareReminder](https://github.com/bkmed/MedicareReminder)
+
 A cross-platform (Web & Native) application helping patients manage medications with timely notifications and intelligent scheduling.
 
 ---
@@ -71,4 +75,5 @@ I'm always open to discussing professional opportunities or technical collaborat
 - **Twitter**: [@MoBenKhedher](https://x.com/MoBenKhedher)
 
 ---
+
 Developed with ❤️ by **Ben Khedher Mohamed**
