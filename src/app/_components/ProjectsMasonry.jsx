@@ -1,13 +1,17 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import ImageView from "@components/ImageView";
 
 import { useTranslation } from "../_context/TranslationContext";
 
-const ProjectsMasonry = ({ projects, categories, layout = "masonry", columns = 2 }) => {
+const ProjectsMasonryContent = ({ projects, categories, layout = "masonry", columns = 2 }) => {
   const { t } = useTranslation();
+  const searchParams = useSearchParams();
+  const urlFilter = searchParams.get("filter");
+
   // Isotope
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");
@@ -22,14 +26,19 @@ const ProjectsMasonry = ({ projects, categories, layout = "masonry", columns = 2
         },
         transitionDuration: ".6s",
       });
+
+      // Apply initial filter if present in URL
+      if (urlFilter) {
+        setFilterKey(urlFilter);
+      }
     });
-  }, []);
+  }, [urlFilter]);
 
   useEffect(() => {
     if (isotope.current) {
       filterKey === "*"
         ? isotope.current.arrange({ filter: `*` })
-        : isotope.current.arrange({ filter: `.${filterKey}` });
+        : isotope.current.arrange({ filter: `${filterKey}` });
     }
   }, [filterKey]);
 
@@ -72,7 +81,7 @@ const ProjectsMasonry = ({ projects, categories, layout = "masonry", columns = 2
                     href="#"
                     data-filter="*"
                     onClick={(e) => handleFilterKeyChange("*", e)}
-                    className="art-link art-current"
+                    className={filterKey === "*" ? "art-link art-current" : "art-link"}
                   >
                     {t("projects.allCategories")}
                   </a>
@@ -81,9 +90,9 @@ const ProjectsMasonry = ({ projects, categories, layout = "masonry", columns = 2
                     <a
                       href="#"
                       key={`projects-filter-item-${key}`}
-                      data-filter={`${item.slug}`}
-                      className="art-link"
-                      onClick={(e) => handleFilterKeyChange(item.slug, e)}
+                      data-filter={`.${item.slug}`}
+                      className={filterKey === `.${item.slug}` ? "art-link art-current" : "art-link"}
+                      onClick={(e) => handleFilterKeyChange(`.${item.slug}`, e)}
                     >
                       {item.name}
                     </a>
@@ -100,7 +109,7 @@ const ProjectsMasonry = ({ projects, categories, layout = "masonry", columns = 2
           <div className={`art-grid art-grid-${columns}-col art-gallery`}>
             {/* grid item */}
             {projects.map((item, key) => (
-              <div className={`art-grid-item ${item.category_slug}`} key={`projects-item-${key}`}>
+              <div className={`art-grid-item ${item.category_slug} id-${item.id}`} key={`projects-item-${key}`}>
                 {/* grid item frame */}
                 <a
                   data-fancybox="gallery"
@@ -151,4 +160,11 @@ const ProjectsMasonry = ({ projects, categories, layout = "masonry", columns = 2
     </>
   );
 };
+
+const ProjectsMasonry = (props) => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <ProjectsMasonryContent {...props} />
+  </Suspense>
+);
+
 export default ProjectsMasonry;

@@ -107,15 +107,15 @@
         "children": [
           {
             "label": "RhManagment",
-            "link": "/projects"
+            "link": "/projects?filter=.id-project-rh-managment"
           },
           {
             "label": "Medicare",
-            "link": "/projects"
+            "link": "/projects?filter=.id-project-medicare-reminder"
           },
           {
             "label": "AppKiosk",
-            "link": "/projects"
+            "link": "/projects?filter=.id-project-3"
           }
         ]
       },
