@@ -15,6 +15,7 @@ const nextConfig = {
   basePath: "/Portfolio",
   output: "export",
   outputFileTracingRoot: __dirname,
+  turbopack: {}, // Configure Turbopack to silence conflict error
 };
 
 module.exports = withPWA(nextConfig);
