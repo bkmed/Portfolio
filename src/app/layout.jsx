@@ -38,6 +38,13 @@ export const metadata = {
     template: "%s | " + AppData.settings.siteName,
   },
   description: AppData.settings.siteDescription,
+  manifest: "/Portfolio/manifest.json",
+  themeColor: "#ffc107",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "BK Portfolio",
+  },
 };
 
 import { TranslationProvider } from "./_context/TranslationContext";
