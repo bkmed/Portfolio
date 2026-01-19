@@ -1,7 +1,7 @@
 {
   "settings": {
-    "siteName": "Ben Khedherr Mohamed",
-    "siteDescription": "Portfolio Personnel de Ben Khedherr Mohamed"
+    "siteName": "Ben Khedher Mohamed",
+    "siteDescription": "Portfolio Personnel de Ben Khedher Mohamed"
   },
   "profile": {
     "role": "Développeur Full-stack <br>Designer UI/UX",
@@ -87,6 +87,10 @@
     "history": "Historique",
     "projects": "Projets",
     "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "© 2026 Bk. Tous droits réservés.",
+    "author": "Ben Khedher Mohamed"
   },
   "history": {
     "education": "Éducation",

@@ -13,13 +13,13 @@ const DefaultFooter = () => {
         {/* footer */}
         <footer className="footer">
           {/* copyright */}
-          <div className="art-copy">{AppData.footer.copy}</div>
+          <div className="art-copy">{t("footer.copyright")}</div>
 
           {/* developer */}
           <div>
             {t("common.developedBy")}{" "}
             <a href="https://github.com/bkmed" target="_blank" rel="noreferrer">
-              Ben Khedher Mohamed
+              {t("footer.author")}
             </a>
           </div>
         </footer>

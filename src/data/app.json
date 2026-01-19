@@ -1,7 +1,7 @@
 {
   "settings": {
-    "siteName": "Ben Khedherr Mohamed",
-    "siteDescription": "Personal Portfolio of Ben Khedherr Mohamed",
+    "siteName": "Ben Khedher Mohamed",
+    "siteDescription": "Personal Portfolio of Ben Khedher Mohamed",
     "formspreeURL": "https://formspree.io/f/mjkgwbdp",
     "mailchimp": {
       "url": "",
@@ -11,7 +11,7 @@
   },
   "profile": {
     "avatar": "/Portfolio/img/face-1.jpeg",
-    "name": "Ben Khedherr Mohamed",
+    "name": "Ben Khedher Mohamed",
     "role": "Full-Stack Developer <br>Ui/UX Designer",
     "info": [
       {

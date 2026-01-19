@@ -39,12 +39,15 @@ export const metadata = {
   },
   description: AppData.settings.siteDescription,
   manifest: "/Portfolio/manifest.json",
-  themeColor: "#ffc107",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
     title: "BK Portfolio",
   },
+};
+
+export const viewport = {
+  themeColor: "#ffc107",
 };
 
 import { TranslationProvider } from "./_context/TranslationContext";
