@@ -28,7 +28,6 @@ export const TranslationProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem("lang", lang);
     document.documentElement.lang = lang;
-    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
   }, [lang]);
 
   const toggleLang = () => {
