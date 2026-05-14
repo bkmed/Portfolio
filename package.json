@@ -46,5 +46,9 @@
     "gh-pages": "6.3.0",
     "globals": "17.6.0",
     "prettier": "3.8.3"
+  },
+  "overrides": {
+    "serialize-javascript": ">=7.0.5",
+    "postcss": ">=8.5.10"
   }
 }

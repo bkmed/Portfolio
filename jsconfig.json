@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "checkJs": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
     "paths": {
       "@/*": ["./*"],
       "@common/*": ["./src/app/_common/*"],
@@ -9,5 +14,6 @@
       "@library/*": ["./src/app/_lib/*"],
       "@data/*": ["./src/data/*"]
     }
-  }
+  },
+  "exclude": ["node_modules", ".next", "out"]
 }

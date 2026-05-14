@@ -15,7 +15,10 @@ const nextConfig = {
   basePath: "/Portfolio",
   output: "export",
   outputFileTracingRoot: __dirname,
-  turbopack: {}, // Configure Turbopack to silence conflict error
+  turbopack: {
+    // Explicitly set the root directory to fix Turbopack inference issues
+    root: __dirname,
+  },
 };
 
 if (process.env.NODE_ENV === "development") {
