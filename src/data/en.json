@@ -4,6 +4,7 @@
     "siteDescription": "Personal Portfolio of Ben Khedher Mohamed"
   },
   "profile": {
+    "name": "Ben Khedher Mohamed",
     "role": "Full-stack developer <br>UI/UX designer",
     "info": [
       {
@@ -143,7 +144,17 @@
     ]
   },
   "projects": {
-    "allCategories": "All Categories"
+    "allCategories": "All Categories",
+    "categories": [
+      {
+        "name": "WebSite",
+        "slug": "web-site"
+      },
+      {
+        "name": "Mobile Application",
+        "slug": "mobile-application"
+      }
+    ]
   },
   "common": {
     "readMore": "Read More",

@@ -65,7 +65,7 @@ const InfoBarModule = () => {
             {/* avatar end */}
             {/* name */}
             <h5 className="art-name mb-10">
-              <Link href="/">{AppData.profile.name}</Link>
+              <Link href="/">{t("profile.name")}</Link>
             </h5>
             {/* post */}
             <div className="art-sm-text" dangerouslySetInnerHTML={{ __html: t("profile.role") }} />

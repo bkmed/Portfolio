@@ -8,6 +8,7 @@ import { useTranslation } from "../_context/TranslationContext";
 
 const ProjectsMasonryContent = ({ projects, categories, layout = "masonry", columns = 2 }) => {
   const { t } = useTranslation();
+  const categoriesList = Array.isArray(t("projects.categories")) ? t("projects.categories") : categories;
   const searchParams = useSearchParams();
   const urlFilter = searchParams.get("filter");
 
@@ -85,7 +86,7 @@ const ProjectsMasonryContent = ({ projects, categories, layout = "masonry", colu
                     {t("projects.allCategories")}
                   </a>
                   {/* filter link */}
-                  {categories.map((item, key) => (
+                  {categoriesList.map((item, key) => (
                     <a
                       href="#"
                       key={`projects-filter-item-${key}`}

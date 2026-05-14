@@ -4,6 +4,7 @@
     "siteDescription": "المعرض الشخصي لمحمد بن خذر"
   },
   "profile": {
+    "name": "محمد بن خذر",
     "role": "مطور فول-ستاك <br>مصمم واجهات وتجربة المستخدم",
     "info": [
       {
@@ -143,7 +144,17 @@
     ]
   },
   "projects": {
-    "allCategories": "جميع الفئات"
+    "allCategories": "جميع الفئات",
+    "categories": [
+      {
+        "name": "موقع إلكتروني",
+        "slug": "web-site"
+      },
+      {
+        "name": "تطبيق جوال",
+        "slug": "mobile-application"
+      }
+    ]
   },
   "common": {
     "readMore": "اقرأ المزيد",
