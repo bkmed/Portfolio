@@ -65,7 +65,7 @@ const InfoBarModule = () => {
             {/* avatar end */}
             {/* name */}
             <h5 className="art-name mb-10">
-              <Link href="/">{t("profile.name")}</Link>
+              <Link href="/">{AppData.profile.name}</Link>
             </h5>
             {/* post */}
             <div className="art-sm-text" dangerouslySetInnerHTML={{ __html: t("profile.role") }} />
@@ -152,12 +152,13 @@ const InfoBarModule = () => {
               {/* download cv button */}
               <a
                 href={AppData.profile.resume}
-                className="art-link"
+                className="art-btn art-btn-md art-btn-cv"
                 download
                 target="_blank"
                 rel="noreferrer"
               >
-                {t("common.cv")} <i className="fas fa-download"></i>
+                <span>{t("common.cv")}</span>
+                <i className="fas fa-download"></i>
               </a>
             </div>
             {/* links frame end */}
