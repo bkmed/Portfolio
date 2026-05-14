@@ -18,4 +18,17 @@ const nextConfig = {
   turbopack: {}, // Configure Turbopack to silence conflict error
 };
 
+if (process.env.NODE_ENV === "development") {
+  nextConfig.redirects = async () => {
+    return [
+      {
+        source: "/",
+        destination: "/Portfolio",
+        basePath: false,
+        permanent: false,
+      },
+    ];
+  };
+}
+
 module.exports = withPWA(nextConfig);
