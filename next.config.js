@@ -9,14 +9,17 @@ const withPWA = require("@ducanh2912/next-pwa").default({
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    unoptimized: true, // Disable default image optimization
+    unoptimized: true,
   },
   assetPrefix: "/Portfolio/",
   basePath: "/Portfolio",
   output: "export",
   outputFileTracingRoot: __dirname,
-  turbopack: {}, // Configure Turbopack to silence conflict error
-  async redirects() {
+  turbopack: {},
+};
+
+if (process.env.NODE_ENV === "development") {
+  nextConfig.redirects = async () => {
     return [
       {
         source: "/",
@@ -25,7 +28,7 @@ const nextConfig = {
         permanent: false,
       },
     ];
-  },
-};
+  };
+}
 
 module.exports = withPWA(nextConfig);
