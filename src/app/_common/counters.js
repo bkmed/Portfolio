@@ -21,7 +21,7 @@ export const CountersBarAnim = () => {
   animate(".art-counter", {
     delay: 500,
     opacity: [1, 1],
-    update: function () {
+    onUpdate: function () {
       counters.forEach((item) => {
         var countTo = item.getAttribute("data-count");
         numberAnimate(

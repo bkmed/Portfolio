@@ -39,6 +39,7 @@ export const SliderProps = {
       nextEl: ".art-works-swiper-next",
       prevEl: ".art-works-swiper-prev",
     },
+    modules: [Pagination, Navigation, Autoplay],
     breakpoints: {
       1500: {
         slidesPerView: 2,

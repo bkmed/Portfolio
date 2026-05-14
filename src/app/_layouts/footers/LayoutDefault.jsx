@@ -1,6 +1,5 @@
 "use client";
 
-import AppData from "@data/app.json";
 import { useTranslation } from "../../_context/TranslationContext";
 
 const DefaultFooter = () => {
