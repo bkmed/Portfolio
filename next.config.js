@@ -1,19 +1,21 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export",
-  reactStrictMode: false,
-  images: {
-    unoptimized: true,
-  },
-  assetPrefix: "/Portfolio/",
-  basePath: "/Portfolio",
-  outputFileTracingRoot: __dirname,
-  turbopack: {},
-};
-
-module.exports = require("@ducanh2912/next-pwa").default({
+const withPWA = require("@ducanh2912/next-pwa").default({
   dest: "public",
   disable: process.env.NODE_ENV === "development",
   register: true,
   skipWaiting: true,
-})(nextConfig);
+});
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: false,
+  images: {
+    unoptimized: true, // Disable default image optimization
+  },
+  assetPrefix: "/Portfolio/",
+  basePath: "/Portfolio",
+  output: "export",
+  outputFileTracingRoot: __dirname,
+  turbopack: {}, // Configure Turbopack to silence conflict error
+};
+
+module.exports = withPWA(nextConfig);
